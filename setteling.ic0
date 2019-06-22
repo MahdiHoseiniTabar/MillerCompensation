@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "17:16:12 06/22/2019 "
-* "netlist" "c:\users\caspian\desktop\primary\transiant.sp "
+* "rundate" "17:44:46 06/22/2019 "
+* "netlist" "c:\users\caspian\desktop\primary\setteling.sp "
 * "runtitle" "transiaent simulation of a nmos input single-ende diff pair"
 * time =    0.            
 * temperature =   25.0000        
@@ -10,19 +10,14 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ 1 = 755.2269m       
-+ 2 = 800.7536m       
-+ 3 = 475.9242m       
-+ 4 = 485.5288m       
-+ 5 = 485.5288m       
++ 1 = 755.2266m       
++ 2 = 597.0992m       
++ 3 = 483.7680m       
++ 4 = 483.7664m       
++ 5 = 483.7664m       
 + dd =   1.2000        
-+ im0 = 285.3573m       
-+ input =   0.            
-+ ph1 =   0.            
-+ ph2 =   0.            
 + ss =   0.            
-+ v0 = 270.7146m       
-+ vin+ = 300.0000m       
-+ vin- = 300.9674m       
-+ vout = 570.7146m       
++ vin+ =   0.            
++ vin- =   0.            
++ vout = 593.4663m       
 ***   END: Saved Operating Point ***                     

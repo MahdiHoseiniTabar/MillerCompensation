@@ -6,7 +6,7 @@
     D:\synopsys\Hspice_A-2008.03\license.warn
   Use of this program is your acceptance to be bound by this 
   license agreement. HSPICE is the trademark of Synopsys, Inc.
-  Input File: c:\users\caspian\desktop\primary\transiant.sp                     
+  Input File: c:\users\caspian\desktop\primary\setteling.sp                     
  Init: read install configuration file: D:\synopsys\Hspice_A-2008.03\meta.cfg
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
 
@@ -8945,30 +8945,15 @@
  ***********************************************************
  ** transient simulation	
 
- ch	vin-	im0	1p
-
- *ideal switches in hspice
- g1	input	im0	vcr	pwl(1)	ph1	0	0.0v,10meg	1.2v,10
- g2	im0	vout	vcr	pwl(1)	ph2	0	0.0v,10meg	1.2v,10
- g3	vin-	v0	vcr	pwl(1) 	ph1	0	0.0v,10meg	1.2v,10
-
- *clock	phases
- vph1	ph1	0 	pulse(0		1.2	0	0.2n	0.2n	5.35n	12.5n)
- vph2	ph2	0 	pulse(0		1.2	6.25n	0.2n	0.2n	5.35n	12.5n)
-
- vpulse1	    input	0	pulse(0 	0.4	1n	0n	0n	6.5n	6.5n)
- *vpulse2    input	0	pulse(1		0.7	0	0.1n	0.1n	5n	10n)
-
- vcmi	vin+	0	dc=0.3
- vdc	vout	v0	dc=0.3
+ vpulse1	    vin+	0	pulse(0 	0.4	0n	0n	0n	5n	5n)
+ v0	vin-	0 dc=0	
 
  .option accurate=1
- .tran 0.02n 6.5n
+ .tran 0.02n 5.5n
  .probe
 
- **warning**  unknown analysis mode:  ‹Á>¿P .. line ignored
+ **warning**  unknown analysis mode:  ‹ÁD¿P .. line ignored
 
- .end
 
  ***********************************************************************
  ** runlvl is invoked, you can disable it by:
@@ -8995,14 +8980,6 @@
 
 
  **warning** dc voltage reset to initial transient source value
-             in source        0:vph1                new dc=  0.0000D+00
-
-
- **warning** dc voltage reset to initial transient source value
-             in source        0:vph2                new dc=  0.0000D+00
-
-
- **warning** dc voltage reset to initial transient source value
              in source        0:vpulse1             new dc=  0.0000D+00
 
 
@@ -9013,7 +8990,7 @@
 
 
  **warning** pulse        0:vpulse1         
- period too small, reset to   6.5400000E-09
+ period too small, reset to   5.0400000E-09
 
  
 Model Name: pch.5  
@@ -10530,14 +10507,6 @@ Model Name: pch.15
 
  
       
-
- **diagnostic** dc convergence failure, 
- resetting dcon option to 1 and retrying
-
- **diagnostic** dc convergence successful
- you can increase the efficiency of the
- operating point calculation by setting dcon= 1
- in the .option statement
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  transiaent simulation of a nmos input single-ende diff pair                    
@@ -10546,11 +10515,10 @@ Model Name: pch.15
  ***** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:1       = 755.2269m 0:2       = 800.7536m 0:3       = 475.9242m
- +0:4       = 485.5288m 0:5       = 485.5288m 0:dd      =   1.2000 
- +0:im0     = 285.3573m 0:input   =   0.      0:ph1     =   0.     
- +0:ph2     =   0.      0:ss      =   0.      0:v0      = 270.7146m
- +0:vin+    = 300.0000m 0:vin-    = 300.9674m 0:vout    = 570.7146m
+ +0:1       = 755.2266m 0:2       = 597.0992m 0:3       = 483.7680m
+ +0:4       = 483.7664m 0:5       = 483.7664m 0:dd      =   1.2000 
+ +0:ss      =   0.      0:vin+    =   0.      0:vin-    =   0.     
+ +0:vout    = 593.4663m
 
 
           ***** job concluded
@@ -10560,24 +10528,24 @@ Model Name: pch.15
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        244 kbytes
+           total memory used        239 kbytes
 
-  # nodes =      16 # elements=      23
+  # nodes =      11 # elements=      16
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       8
   # va device =       0
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.01           1         222
-    transient          0.08         326         537         214 rev=        58
-    readin             0.31
+    op point           0.01           1           8
+    transient          0.07         276         196          79 rev=        10
+    readin             0.32
     errchk             0.02
     setup              0.01
     output             0.00
-           total cpu time          0.47 seconds
+           total cpu time          0.46 seconds
            total elapsed time         1 seconds
-               job started at  17:16:12 06/22/2019
-               job ended   at  17:16:13 06/22/2019
+               job started at  17:44:46 06/22/2019
+               job ended   at  17:44:47 06/22/2019
 
 
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini

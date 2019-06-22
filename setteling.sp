@@ -30,38 +30,10 @@ Rc	4	5	50
 ***********************************************************
 ** Transient simulation	
 
-CH	vin-	im0	1p
-
-*Ideal switches in Hspice
-g1	input	im0	vcr	pwl(1)	ph1	0	0.0v,10meg	1.2v,10
-g2	im0	vout	vcr	pwl(1)	ph2	0	0.0v,10meg	1.2v,10
-g3	vin-	v0	vcr	pwl(1) 	ph1	0	0.0v,10meg	1.2v,10
-
-*clock	phases
-vph1	ph1	0 	pulse(0		1.2	0	0.2n	0.2n	5.35n	12.5n)
-vph2	ph2	0 	pulse(0		1.2	6.25n	0.2n	0.2n	5.35n	12.5n)
-
-vpulse1	    input	0	pulse(0 	0.4	1n	0n	0n	6.5n	6.5n)
-*vpulse2    input	0	pulse(1		0.7	0	0.1n	0.1n	5n	10n)
-
-vcmi	vin+	0	dc=0.3
-vdc	vout	v0	dc=0.3
+vpulse1	    vin+	0	pulse(0 	0.4	0n	0n	0n	5n	5n)
+v0	vin-	0 dc=0	
 
 .option accurate=1
-.tran 0.02n 6.5n
+.tran 0.02n 5.5n
 .probe
 .end
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
