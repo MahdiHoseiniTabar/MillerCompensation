@@ -1,0 +1,27 @@
+***** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******
+ Input File: e:\term6\elec3\project\primary\millerdc.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   ALFA RAYAN           HOSTNAME: DESKTOP-7EN4FFT
+ lic: HOSTID: "1831bf1cf576 f85971f1c01f f85971f1c01b f85971f1c01c fa5971f1c01b"
+ lic: Using FLEXlm license file:
+ lic: C:\Flexlm\hspice_2007-09.lic
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "1831bf1cf576 f85971f1c01f f85971f1c01b f859
+ lic:
+ Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
+ init: begin read circuit files,  cpu clock=  1.87E-01
+ init: end read circuit files,  cpu clock=  2.50E-01 memory=    156 kb
+ init: begin check errors,  cpu clock=  2.50E-01
+ init: end check errors,  cpu clock=  2.81E-01 memory=    418 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  2.81E-01
+       establish matrix -- done,  cpu clock=  2.81E-01 memory=    421 kb
+       re-order matrix -- done,  cpu clock=  2.81E-01 memory=    422 kb
+ init: end setup matrix,  cpu clock=  2.81E-01 memory=    437 kb
+ output: e:\term6\elec3\project\primary\millerdc.sw0
+ sweep: dc dc0    begin, #sweeps=**** cpu clock=  2.97E-01
+ sweep: dc dc0    end,  cpu clock=  1.17E+00 memory=    437 kb
+>info:         ***** hspice job concluded
+ Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
+ lic: Release hspice token(s)
