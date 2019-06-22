@@ -15,7 +15,7 @@ M5	vout	4	ss	ss	nch	W=36.18u	L=0.2u	M=1
 M6	vout	1	dd	dd	pch	W=144.75u	L=0.2u	M=1
 
 M7	2	1	dd	dd	pch	W=46u	L=0.2u	M=1
-M8	1	1	dd	dd	pch	W=4.6u	L=0.2u	M=1
+M8	1	1	dd	dd	pch	W=3.68u	L=0.2u	M=1
 
 Ib	1	ss	dc=12.50u
 
