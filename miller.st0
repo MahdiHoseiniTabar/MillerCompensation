@@ -11,19 +11,19 @@
  lic: NODE LOCKED license on hostid "d8cb8af44a32 ac2b6e76435e 00ffdf8755bb 0a00
  lic:
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
- init: begin read circuit files,  cpu clock=  2.99E-01
+ init: begin read circuit files,  cpu clock=  3.00E-01
        option acout    =     0.00
- init: end read circuit files,  cpu clock=  3.89E-01 memory=    156 kb
- init: begin check errors,  cpu clock=  3.89E-01
- init: end check errors,  cpu clock=  4.06E-01 memory=    215 kb
+ init: end read circuit files,  cpu clock=  3.91E-01 memory=    156 kb
+ init: begin check errors,  cpu clock=  3.91E-01
+ init: end check errors,  cpu clock=  4.06E-01 memory=    216 kb
  init: begin setup matrix, pivot=    10 cpu clock=  4.06E-01
-       establish matrix -- done,  cpu clock=  4.10E-01 memory=    218 kb
-       re-order matrix -- done,  cpu clock=  4.12E-01 memory=    219 kb
- init: end setup matrix,  cpu clock=  4.14E-01 memory=    234 kb
- dcop: begin dcop,  cpu clock=  4.16E-01
- dcop: end dcop,  cpu clock=  4.20E-01 memory=    234 kb  tot_iter=       9
+       establish matrix -- done,  cpu clock=  4.10E-01 memory=    219 kb
+       re-order matrix -- done,  cpu clock=  4.12E-01 memory=    220 kb
+ init: end setup matrix,  cpu clock=  4.13E-01 memory=    235 kb
+ dcop: begin dcop,  cpu clock=  4.15E-01
+ dcop: end dcop,  cpu clock=  4.21E-01 memory=    235 kb  tot_iter=      10
  output: c:\users\caspian\desktop\primary\miller.ma0
- sweep: ac ac0    begin, #sweeps= 417 cpu clock=  4.25E-01
+ sweep: ac ac0    begin, #sweeps= 417 cpu clock=  4.26E-01
  ac: frequency=    1.05E+01
  ac: frequency=    6.61E+01
  ac: frequency=    4.57E+02
@@ -35,7 +35,7 @@
  ac: frequency=    4.57E+07
  ac: frequency=    3.16E+08
  ac: frequency=    2.09E+09
- sweep: ac ac0    end,  cpu clock=  5.26E-01 memory=    251 kb
+ sweep: ac ac0    end,  cpu clock=  5.31E-01 memory=    252 kb
 >info:         ***** hspice job concluded
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
  lic: Release hspice token(s)

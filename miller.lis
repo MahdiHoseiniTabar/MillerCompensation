@@ -8920,17 +8920,17 @@
 
  * amplifier nestlist
 
- m1	3	vin-	2	dd	pch	w=23u	l=0.5u	m=1
- m2	4	vin+	2	dd	pch	w=23u	l=0.5u	m=1
+ m1	3	vin-	2	dd	pch	w=23u	l=0.2u	m=1
+ m2	4	vin+	2	dd	pch	w=23u	l=0.2u	m=1
 
- m3	3	3	ss	ss	nch	w=6u	l=0.5u	m=1
- m4	4	3	ss	ss	nch	w=6u	l=0.5u	m=1
+ m3	3	3	ss	ss	nch	w=6u	l=0.2u	m=1
+ m4	4	3	ss	ss	nch	w=6u	l=0.2u	m=1
 
- m5	vout	4	ss	ss	nch	w=36.18u	l=0.5u	m=1
- m6	vout	1	dd	dd	pch	w=144.75u	l=0.5u	m=1
+ m5	vout	4	ss	ss	nch	w=36.18u	l=0.2u	m=1
+ m6	vout	1	dd	dd	pch	w=144.75u	l=0.2u	m=1
 
- m7	2	1	dd	dd	pch	w=46u	l=0.5u	m=1
- m8	1	1	dd	dd	pch	w=4.6u	l=0.5u	m=1
+ m7	2	1	dd	dd	pch	w=46u	l=0.2u	m=1
+ m8	1	1	dd	dd	pch	w=4.6u	l=0.2u	m=1
 
  ib	1	ss	dc=12.50u
 
@@ -8958,10 +8958,10 @@
  .measure   ac  phase_margin   find  vp(ss, vout) when vdb(vout, ss)=0
  .probe
 
- **warning**  unknown analysis mode:  ‹ÁB¿P .. line ignored
+ **warning**  unknown analysis mode:  ‹Á;¿P .. line ignored
 
  
-Model Name: pch.3  
+Model Name: pch.5  
 
  BSIM4 Model (Level 54)
 
@@ -8994,16 +8994,16 @@ Model Name: pch.3
     CDSC =      0 
     CDSCB =      0 
     CDSCD =      0 
-    CIT =  0.001 
-    NFACTOR =    0.5 
+    CIT = -0.0007143 
+    NFACTOR = 0.4429 
     XJ = 1.7e-007 
     VSAT = 1.2e+005 
     A0 =   3.62 
-    AGS = 0.9288 
+    AGS =  3.517 
     A1 =      0 
     A2 =      1 
-    AT = 2.827e+005 
-    KETA = -0.06865 
+    AT = 2.274e+005 
+    KETA = -0.2391 
     NSUB = 6e+016 
     NDEP = 1.72e+017 
     NSD = 1e+020 
@@ -9014,10 +9014,10 @@ Model Name: pch.3
     VBM =     -3 
     XT = 1.55e-007 
     K1 = 0.1623 
-    KT1 = -0.2898 
+    KT1 = -0.2563 
     KT1L =      0 
-    KT2 = -0.02958 
-    K2 = 0.02433 
+    KT2 = -0.03875 
+    K2 = 0.03511 
     K3 =  -0.58 
     K3B =    0.8 
     LPE0 = 2.805e-007 
@@ -9033,17 +9033,17 @@ Model Name: pch.3
     DVT2W =      0 
     DROUT =      0 
     DSUB =    0.5 
-    VTH0 = -0.1551 
+    VTH0 = -0.1783 
     EU =      1 
-    UA = -4.409e-012 
-    UA1 = 4.239e-009 
-    UB = 1.5e-018 
-    UB1 = -5.351e-018 
-    UC = 6.719e-011 
+    UA = -8.13e-010 
+    UA1 = 2.013e-009 
+    UB = 2.657e-018 
+    UB1 = -3.816e-018 
+    UC = 7.18e-011 
     UC1 = -6.421e-011 
-    U0 = 0.008635 
-    UTE = -0.7843 
-    VOFF = -0.0797 
+    U0 = 0.009399 
+    UTE =  -1.25 
+    VOFF = -0.1139 
     VOFFL =      0 
     MINV =      0 
     FPROUT =   1000 
@@ -9060,9 +9060,9 @@ Model Name: pch.3
     PRWG =      0 
     PRWB =      0 
     PRT =      0 
-    ETA0 =  0.085 
-    ETAB =  -0.02 
-    PCLM =      1 
+    ETA0 = 0.1471 
+    ETAB = -0.009714 
+    PCLM = 0.6429 
     PDIBLC1 =      0 
     PDIBLC2 =  0.005 
     PDIBLCB =      0 
@@ -9161,19 +9161,25 @@ Model Name: pch.3
     SL = 2e-006 
     SW = 2e-006 
     K =      0 
-    LAT = -0.003125 
-    LAGS = 9.422e-007 
-    LKETA = -3.903e-008 
-    LK2 = 5.184e-009 
-    LVTH0 = -1.616e-008 
-    LUA = -3.155e-016 
-    LUA1 = -1.38e-015 
-    LUB = 4.909e-025 
-    LUB1 = 6.952e-025 
-    LUC = 1.688e-017 
-    LU0 = 4.177e-010 
-    LUTE = -3.743e-007 
-    LVOFF = -1.836e-008 
+    LCIT = 3.429e-010 
+    LNFACTOR = 5.143e-008 
+    LAT = -0.01072 
+    LAGS = 7.178e-007 
+    LKETA = 1.375e-008 
+    LKT1 = -2.057e-009 
+    LK2 = -2.229e-010 
+    LVTH0 = 1.157e-009 
+    LUA = 2.498e-017 
+    LUA1 = -3.129e-017 
+    LUB = 5.314e-027 
+    LUB1 = -3.651e-026 
+    LUC = 9.96e-018 
+    LU0 = -8.914e-012 
+    LUTE = -1.8e-008 
+    LVOFF = -2.666e-009 
+    LETA0 = -3.429e-009 
+    LETAB = -2.057e-009 
+    LPCLM = -2.657e-008 
     TNOM =  298.1 
     CGSO = 2.568e-011 
     CGDO = 2.568e-011 
@@ -9219,8 +9225,8 @@ Model Name: pch.3
     LWN =      1 
     LWL =      0 
     LWLC =      0 
-    LMIN = 5e-007 
-    LMAX = 1.2e-006 
+    LMIN = 1e-007 
+    LMAX = 2.4e-007 
     WINT = 5e-009 
     WL =      0 
     WLC =      0 
@@ -9322,7 +9328,7 @@ Model Name: pch.3
  
 
  
-Model Name: nch.6  
+Model Name: nch.8  
 
  BSIM4 Model (Level 54)
 
@@ -9355,16 +9361,16 @@ Model Name: nch.6
     CDSC =      0 
     CDSCB =      0 
     CDSCD =      0 
-    CIT =      0 
+    CIT = -0.0001229 
     NFACTOR =    0.5 
     XJ = 1.5e-007 
     VSAT = 1.14e+005 
     A0 =  2.375 
-    AGS = 0.9379 
+    AGS =   0.95 
     A1 =      0 
     A2 =      1 
-    AT = 4.5e+004 
-    KETA = -0.045 
+    AT = 3.536e+004 
+    KETA = -0.04414 
     NSUB = 6e+016 
     NDEP = 8.369e+017 
     NSD = 1e+020 
@@ -9374,17 +9380,17 @@ Model Name: nch.6
     VBX =      0 
     VBM =     -3 
     XT = 1.55e-007 
-    K1 = 0.3231 
-    KT1 = -0.207 
+    K1 = 0.3243 
+    KT1 = -0.2624 
     KT1L =      0 
     KT2 = -0.04464 
-    K2 = 0.008578 
-    K3 =   -2.7 
+    K2 = -0.01101 
+    K3 = -2.957 
     K3B =    1.2 
     LPE0 = 4.45e-008 
     LPEB =      0 
     DVTP0 = 4e-007 
-    DVTP1 =      2 
+    DVTP1 =  1.571 
     W0 = -5e-008 
     DVT0 =   13.9 
     DVT1 =   1.25 
@@ -9398,13 +9404,13 @@ Model Name: nch.6
     EU =   1.67 
     UA = -6.284e-010 
     UA1 = 2.684e-009 
-    UB = 2.199e-018 
+    UB = 2.292e-018 
     UB1 = -3.673e-018 
-    UC = 2.337e-010 
+    UC = 2.411e-010 
     UC1 = -6.421e-011 
-    U0 = 0.03985 
-    UTE = -1.757 
-    VOFF = -0.106 
+    U0 = 0.04546 
+    UTE =  -1.55 
+    VOFF = -0.1159 
     VOFFL =      0 
     MINV =      0 
     FPROUT =    200 
@@ -9425,7 +9431,7 @@ Model Name: nch.6
     ETAB =   -0.1 
     PCLM =   0.84 
     PDIBLC1 =      0 
-    PDIBLC2 = 0.0001 
+    PDIBLC2 = 1.429e-005 
     PDIBLCB =      0 
     PSCBE1 = 9.264e+008 
     PSCBE2 = 1e-020 
@@ -9446,10 +9452,10 @@ Model Name: nch.6
     CGIDL =    0.5 
     PHIN =      0 
     EGIDL =   0.53 
-    AIGC = 0.0103 
+    AIGC = 0.01035 
     BIGC = 0.001525 
     CIGC =      0 
-    AIGSD = 0.00845 
+    AIGSD = 0.008355 
     BIGSD = 0.0004021 
     CIGSD = 0.001463 
     AIGBACC = 0.01134 
@@ -9522,30 +9528,40 @@ Model Name: nch.6
     SL = 2e-006 
     SW = 2e-006 
     K =      0 
-    LAGS = 1.206e-007 
-    LKT1 = -1.104e-008 
-    LK2 = -3.486e-009 
-    LUB = -1.248e-025 
-    LUC = -2.227e-017 
-    LUTE = 9.421e-008 
-    LVOFF = 6.826e-010 
-    WAGS = -1.498e-024 
-    WKT1 = 1.873e-025 
-    WK2 = 4.682e-026 
+    LCIT = 2.246e-010 
+    LAT = 0.001929 
+    LKETA = 3.429e-009 
+    LK1 = -2.474e-010 
+    LKT1 = -1.62e-009 
+    LK2 = 1.203e-009 
+    LK3 = 1.543e-008 
+    LDVTP1 = 8.571e-008 
+    LUB = -9.155e-027 
+    LUC = -4.108e-019 
+    LU0 = -5.144e-010 
+    LUTE = 1.114e-008 
+    LVOFF = -2.472e-009 
+    LPDIBLC2 = 1.714e-011 
+    LAIGC = -9.429e-012 
+    LAIGSD = 5.716e-012 
+    WK1 = -1.237e-008 
+    WK2 = 3.453e-009 
     WVTH0 = 5.574e-009 
-    WUB = -2.812e-025 
-    WUC = -3.759e-017 
-    WU0 = -6.666e-009 
-    WUTE = 1.765e-007 
-    WVOFF = 6.855e-010 
+    WUB = -1.088e-024 
+    WUC = -1.345e-016 
+    WU0 = -1.23e-008 
+    WUTE = 7.437e-008 
+    WVOFF = -1.64e-008 
     WETA0 = -1.338e-008 
-    PAGS = 1.492e-029 
-    PKT1 = -1.865e-030 
-    PK2 = -4.663e-031 
-    PUB = -6.398e-032 
-    PUC = -5.376e-024 
-    PUTE = -2.581e-014 
-    PVOFF = -6.828e-015 
+    WAIGSD = 9.555e-011 
+    PK1 = 2.475e-015 
+    PK2 = -6.907e-016 
+    PUB = 4.185e-032 
+    PUC = 4.109e-024 
+    PU0 = 5.16e-016 
+    PUTE = -1.72e-015 
+    PVOFF = 1.319e-015 
+    PAIGSD = -5.733e-018 
     TNOM =  298.1 
     CGSO = 1.209e-010 
     CGDO = 1.209e-010 
@@ -9591,8 +9607,8 @@ Model Name: nch.6
     LWN =      1 
     LWL =      0 
     LWLC =      0 
-    LMIN = 5e-007 
-    LMAX = 1e-005 
+    LMIN = 1e-007 
+    LMAX = 2.4e-007 
     WINT = 6e-009 
     WL =      0 
     WLC =      0 
@@ -9694,7 +9710,7 @@ Model Name: nch.6
  
 
  
-Model Name: nch.2  
+Model Name: nch.4  
 
  BSIM4 Model (Level 54)
 
@@ -9727,16 +9743,16 @@ Model Name: nch.2
     CDSC =      0 
     CDSCB =      0 
     CDSCD =      0 
-    CIT =      0 
+    CIT = -0.0001229 
     NFACTOR =    0.5 
     XJ = 1.5e-007 
     VSAT = 1.14e+005 
     A0 =  2.375 
-    AGS = 0.9379 
+    AGS =   0.95 
     A1 =      0 
     A2 =      1 
-    AT = 4.5e+004 
-    KETA = -0.045 
+    AT = 3.536e+004 
+    KETA = -0.04414 
     NSUB = 6e+016 
     NDEP = 8.369e+017 
     NSD = 1e+020 
@@ -9747,16 +9763,16 @@ Model Name: nch.2
     VBM =     -3 
     XT = 1.55e-007 
     K1 = 0.3231 
-    KT1 = -0.207 
+    KT1 = -0.2624 
     KT1L =      0 
     KT2 = -0.04464 
-    K2 = 0.008578 
-    K3 =   -2.7 
+    K2 = -0.01067 
+    K3 = -2.957 
     K3B =    1.2 
     LPE0 = 4.45e-008 
     LPEB =      0 
     DVTP0 = 4e-007 
-    DVTP1 =      2 
+    DVTP1 =  1.571 
     W0 = -5e-008 
     DVT0 =   13.9 
     DVT1 =   1.25 
@@ -9770,13 +9786,13 @@ Model Name: nch.2
     EU =   1.67 
     UA = -6.284e-010 
     UA1 = 2.684e-009 
-    UB = 2.171e-018 
+    UB = 2.183e-018 
     UB1 = -3.673e-018 
-    UC = 2.3e-010 
+    UC = 2.277e-010 
     UC1 = -6.421e-011 
-    U0 = 0.03918 
-    UTE = -1.739 
-    VOFF = -0.1059 
+    U0 = 0.04423 
+    UTE = -1.543 
+    VOFF = -0.1175 
     VOFFL =      0 
     MINV =      0 
     FPROUT =    200 
@@ -9797,7 +9813,7 @@ Model Name: nch.2
     ETAB =   -0.1 
     PCLM =   0.84 
     PDIBLC1 =      0 
-    PDIBLC2 = 0.0001 
+    PDIBLC2 = 1.429e-005 
     PDIBLCB =      0 
     PSCBE1 = 9.264e+008 
     PSCBE2 = 1e-020 
@@ -9818,10 +9834,10 @@ Model Name: nch.2
     CGIDL =    0.5 
     PHIN =      0 
     EGIDL =   0.53 
-    AIGC = 0.0103 
+    AIGC = 0.01035 
     BIGC = 0.001525 
     CIGC =      0 
-    AIGSD = 0.00845 
+    AIGSD = 0.008451 
     BIGSD = 0.0004021 
     CIGSD = 0.001463 
     AIGBACC = 0.01134 
@@ -9894,24 +9910,22 @@ Model Name: nch.2
     SL = 2e-006 
     SW = 2e-006 
     K =      0 
-    LAGS = 1.206e-007 
-    LKT1 = -1.104e-008 
-    LK2 = -3.486e-009 
-    LUB = -1.312e-025 
-    LUC = -2.281e-017 
-    LUTE = 9.163e-008 
-    WAGS = -1.359e-023 
-    WKT1 = 1.699e-024 
-    WK2 = 4.248e-025 
-    WUB = 2.358e-041 
-    WUC = 3.165e-033 
-    WUTE = -1.359e-023 
-    PAGS = 1.354e-028 
-    PKT1 = -1.693e-029 
-    PK2 = -4.231e-030 
-    PUB = -2.349e-046 
-    PUC = -3.153e-038 
-    PUTE = 1.354e-028 
+    LCIT = 2.246e-010 
+    LAT = 0.001929 
+    LKETA = 3.429e-009 
+    LKT1 = -1.62e-009 
+    LK2 = 1.134e-009 
+    LK3 = 1.543e-008 
+    LDVTP1 = 8.571e-008 
+    LUB = -4.971e-027 
+    LU0 = -4.629e-010 
+    LUTE = 1.097e-008 
+    LVOFF = -2.34e-009 
+    LPDIBLC2 = 1.714e-011 
+    LAIGC = -9.429e-012 
+    LAIGSD = -5.774e-014 
+    WAIGSD = -8.67e-010 
+    PAIGSD = 5.202e-017 
     TNOM =  298.1 
     CGSO = 1.209e-010 
     CGDO = 1.209e-010 
@@ -9957,8 +9971,8 @@ Model Name: nch.2
     LWN =      1 
     LWL =      0 
     LWLC =      0 
-    LMIN = 5e-007 
-    LMAX = 1e-005 
+    LMIN = 1e-007 
+    LMAX = 2.4e-007 
     WINT = 6e-009 
     WL =      0 
     WLC =      0 
@@ -10060,7 +10074,7 @@ Model Name: nch.2
  
 
  
-Model Name: pch.8  
+Model Name: pch.10  
 
  BSIM4 Model (Level 54)
 
@@ -10093,16 +10107,16 @@ Model Name: pch.8
     CDSC =      0 
     CDSCB =      0 
     CDSCD =      0 
-    CIT =  0.001 
-    NFACTOR =    0.5 
+    CIT = -0.0008977 
+    NFACTOR = 0.4795 
     XJ = 1.7e-007 
     VSAT = 1.2e+005 
     A0 =   3.62 
-    AGS = 0.9288 
+    AGS =  3.255 
     A1 =      0 
     A2 =      1 
-    AT = 2.827e+005 
-    KETA = -0.06649 
+    AT = 2.25e+005 
+    KETA = -0.2378 
     NSUB = 6e+016 
     NDEP = 1.72e+017 
     NSD = 1e+020 
@@ -10113,10 +10127,10 @@ Model Name: pch.8
     VBM =     -3 
     XT = 1.55e-007 
     K1 = 0.1623 
-    KT1 = -0.2892 
+    KT1 = -0.2563 
     KT1L =      0 
-    KT2 = -0.02958 
-    K2 = 0.02379 
+    KT2 = -0.03875 
+    K2 = 0.03535 
     K3 =  -0.58 
     K3B =    0.8 
     LPE0 = 2.805e-007 
@@ -10132,17 +10146,17 @@ Model Name: pch.8
     DVT2W =      0 
     DROUT =      0 
     DSUB =    0.5 
-    VTH0 = -0.154 
+    VTH0 = -0.1785 
     EU =      1 
-    UA = -3.533e-012 
-    UA1 = 3.937e-009 
-    UB = 1.432e-018 
-    UB1 = -5.413e-018 
-    UC = 5.843e-011 
+    UA = -8.293e-010 
+    UA1 = 2.051e-009 
+    UB = 2.654e-018 
+    UB1 = -3.78e-018 
+    UC = 6.611e-011 
     UC1 = -6.421e-011 
-    U0 = 0.008607 
-    UTE = -0.8869 
-    VOFF = -0.07843 
+    U0 = 0.009495 
+    UTE = -1.241 
+    VOFF = -0.1134 
     VOFFL =      0 
     MINV =      0 
     FPROUT =   1000 
@@ -10159,9 +10173,9 @@ Model Name: pch.8
     PRWG =      0 
     PRWB =      0 
     PRT =      0 
-    ETA0 =  0.085 
-    ETAB =  -0.02 
-    PCLM =      1 
+    ETA0 = 0.1517 
+    ETAB = -0.009714 
+    PCLM = 0.6429 
     PDIBLC1 =      0 
     PDIBLC2 =  0.005 
     PDIBLCB =      0 
@@ -10260,47 +10274,58 @@ Model Name: pch.8
     SL = 2e-006 
     SW = 2e-006 
     K =      0 
-    LAT = -0.003185 
-    LAGS = 9.422e-007 
-    LKETA = -4.002e-008 
-    LKT1 = -7.406e-010 
-    LK2 = 5.49e-009 
-    LVTH0 = -1.712e-008 
-    LUA = -3.176e-016 
-    LUA1 = -1.227e-015 
-    LUB = 5.203e-025 
-    LUB1 = 7.225e-025 
-    LUC = 2.092e-017 
-    LU0 = 4.936e-010 
-    LUTE = -3.265e-007 
-    LVOFF = -1.9e-008 
-    WAT = -0.0005139 
-    WKETA = -2.166e-008 
-    WKT1 = -6.387e-009 
-    WK2 = 5.436e-009 
-    WVTH0 = -1.109e-008 
-    WUA = -8.756e-018 
-    WUA1 = 3.025e-015 
-    WUB = 6.801e-025 
-    WUB1 = 6.2e-025 
-    WUC = 8.766e-017 
-    WU0 = 2.776e-010 
-    WUTE = 1.027e-006 
-    WVOFF = -1.269e-008 
+    LCIT = 3.572e-010 
+    LNFACTOR = 4.856e-008 
+    LAT = -0.01058 
+    LAGS = 7.702e-007 
+    LKETA = 1.349e-008 
+    LKT1 = -2.057e-009 
+    LK2 = -2.698e-010 
+    LVTH0 = 1.027e-009 
+    LUA = 2.732e-017 
+    LUA1 = -3.851e-017 
+    LUB = 9.803e-027 
+    LUB1 = -4.219e-026 
+    LUC = 1.11e-017 
+    LU0 = 6.85e-012 
+    LUTE = -2.191e-008 
+    LVOFF = -2.916e-009 
+    LETA0 = -3.668e-009 
+    LETAB = -2.057e-009 
+    LPCLM = -2.657e-008 
+    WCIT = 1.835e-009 
+    WNFACTOR = -3.671e-007 
+    WAT = 0.02394 
+    WAGS = 2.624e-006 
+    WKETA = -1.317e-008 
+    WK2 = -2.346e-009 
+    WVTH0 = 1.756e-009 
+    WUA = 1.635e-016 
+    WUA1 = -3.716e-016 
+    WUB = 3.91e-026 
+    WUB1 = -3.655e-025 
+    WUC = 5.693e-017 
+    WU0 = -9.688e-010 
+    WUTE = -8.81e-008 
+    WVOFF = -4.453e-009 
+    WETA0 = -4.549e-008 
     WAIGSD = 7.821e-011 
-    PAT = 5.962e-010 
-    PKETA = 9.964e-015 
-    PKT1 = 7.409e-015 
-    PK2 = -3.066e-015 
-    PVTH0 = 9.624e-015 
-    PUA = 2.052e-023 
-    PUA1 = -1.534e-021 
-    PUB = -2.938e-031 
-    PUB1 = -2.734e-031 
-    PUC = -4.033e-023 
-    PU0 = -7.588e-016 
-    PUTE = -4.779e-013 
-    PVOFF = 6.455e-015 
+    PCIT = -1.436e-016 
+    PNFACTOR = 2.873e-014 
+    PAT = -1.435e-009 
+    PAGS = -5.248e-013 
+    PKETA = 2.633e-015 
+    PK2 = 4.692e-016 
+    PVTH0 = 1.302e-015 
+    PUA = -2.342e-023 
+    PUA1 = 7.23e-023 
+    PUB = -4.491e-032 
+    PUB1 = 5.679e-032 
+    PUC = -1.139e-023 
+    PU0 = -1.577e-016 
+    PUTE = 3.907e-014 
+    PVOFF = 2.499e-015 
+    PETA0 = 2.394e-015 
     TNOM =  298.1 
     CGSO = 2.568e-011 
     CGDO = 2.568e-011 
@@ -10346,8 +10371,8 @@ Model Name: pch.8
     LWN =      1 
     LWL =      0 
     LWLC =      0 
-    LMIN = 5e-007 
-    LMAX = 1.2e-006 
+    LMIN = 1e-007 
+    LMAX = 2.4e-007 
     WINT = 5e-009 
     WL =      0 
     WLC =      0 
@@ -10458,10 +10483,10 @@ Model Name: pch.8
  ***** operating point status is all       simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:1       = 844.8743m 0:2       = 712.8531m 0:3       = 383.4760m
- +0:4       = 383.3759m 0:5       = 383.3759m 0:dd      =   1.2000 
+ +0:1       = 879.9954m 0:2       = 690.5062m 0:3       = 353.0538m
+ +0:4       = 353.0415m 0:5       = 353.0415m 0:dd      =   1.2000 
  +0:im0     = 300.0000m 0:ss      =   0.      0:vin+    = 300.0000m
- +0:vin-    = 300.0000m 0:vout    = 608.4610m
+ +0:vin-    = 300.0000m 0:vout    = 524.9053m
 
 
  ****  voltage sources
@@ -10469,10 +10494,10 @@ Model Name: pch.8
  subckt                                                         
  element  0:vdd      0:vss      0:vinac    0:vindc1   0:vindc2  
   volts      1.2000     0.         0.       300.0000m  300.0000m
-  current -550.7011u  550.7011u    3.1901n    3.1901n    3.1903n
-  power    660.8413u    0.         0.      -957.0423p -957.0764p
+  current -611.8779u  611.8779u    1.5529n    1.5529n    1.5529n
+  power    734.2535u    0.         0.      -465.8760p -465.8785p
 
-     total voltage source power dissipation=  660.8394u       watts
+     total voltage source power dissipation=  734.2526u       watts
 
 
 
@@ -10480,12 +10505,12 @@ Model Name: pch.8
 
  subckt             
  element  0:ib      
-  volts    844.8743m
+  volts    879.9954m
   current   12.5000u
-  power    -10.5609u
+  power    -10.9999u
 
 
-     total current source power dissipation= -10.5609u       watts
+     total current source power dissipation= -10.9999u       watts
 
  **** resistors
 
@@ -10503,55 +10528,55 @@ Model Name: pch.8
 
  subckt                                                                    
  element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
- model    0:pch.3    0:pch.3    0:nch.6    0:nch.6    0:nch.2    0:pch.3   
+ model    0:pch.5    0:pch.5    0:nch.8    0:nch.8    0:nch.4    0:pch.5   
  region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
-  id       -64.0283u  -64.0298u   64.0257u   64.0236u  410.1409u -410.1406u
-  ibs      487.2252f  487.2252f    0.         0.         0.         0.     
-  ibd      816.6024f  816.7025f -383.5330f -383.4329f -608.8034f  592.0313f
-  vgs     -412.8531m -412.8531m  383.4760m  383.4760m  383.3759m -355.1257m
-  vds     -329.3771m -329.4772m  383.4760m  383.3759m  608.4610m -591.5390m
-  vbs      487.1469m  487.1469m    0.         0.         0.         0.     
-  vth     -289.4965m -289.4965m  264.7644m  264.7654m  263.2822m -229.7547m
-  vdsat   -144.9909m -144.9909m  125.5905m  125.5898m  126.3154m -133.2976m
-  vod     -123.3566m -123.3566m  118.7116m  118.7106m  120.0937m -125.3710m
-  beta       7.4710m    7.4710m    8.1107m    8.1107m   49.3914m   47.7286m
-  gam eff  162.3000m  162.3000m  323.1000m  323.1000m  323.1000m  162.3000m
-  gm       811.1056u  811.1265u  801.4818u  801.4598u    5.0948m    5.1557m
-  gds       15.2321u   15.2266u   21.0575u   21.0615u   88.0040u   68.1549u
-  gmb       86.6250u   86.6272u  130.1925u  130.1890u  829.4414u  628.0943u
-  cdtot     17.9811f   17.9801f    5.0042f    5.0044f   27.8561f  109.0101f
-  cgtot    105.4141f  105.4137f   32.2269f   32.2270f  193.6390f  684.1806f
-  cstot    101.3840f  101.3840f   32.3609f   32.3609f  194.7622f  677.9059f
-  cbtot     27.2859f   27.2856f   12.1144f   12.1145f   71.5050f  211.4639f
-  cgs       99.8158f   99.8158f   28.9845f   28.9846f  174.3624f  654.4896f
-  cgd        7.9781f    7.9777f    1.7044f    1.7044f   10.0691f   42.1608f
+  id       -68.7504u  -68.7508u   68.7495u   68.7489u  461.8747u -461.8708u
+  ibs      509.5722f  509.5722f    0.         0.         0.         0.     
+  ibd      847.0246f  847.0369f -353.1108f -353.0984f -525.2477f  675.5870f
+  vgs     -390.5062m -390.5062m  353.0538m  353.0538m  353.0415m -320.0046m
+  vds     -337.4524m -337.4647m  353.0538m  353.0415m  524.9053m -675.0947m
+  vbs      509.4938m  509.4938m    0.         0.         0.         0.     
+  vth     -334.3799m -334.3798m  313.0096m  313.0098m  310.7289m -264.6758m
+  vdsat   -102.2399m -102.2400m   82.9165m   82.9164m   83.8193m  -92.7847m
+  vod      -56.1263m  -56.1264m   40.0442m   40.0440m   42.3125m  -55.3288m
+  beta      20.4309m   20.4309m   23.7942m   23.7942m  145.0885m  131.4876m
+  gam eff  162.3000m  162.3000m  323.3065m  323.3065m  323.1000m  162.3000m
+  gm         1.1593m    1.1593m    1.0987m    1.0987m    7.2687m    7.7425m
+  gds       33.1384u   33.1380u   50.8488u   50.8497u  243.2493u  175.5125u
+  gmb      139.8934u  139.8941u  179.9637u  179.9623u    1.1925m    1.0889m
+  cdtot     17.4343f   17.4343f    4.9537f    4.9537f   28.2886f  104.1882f
+  cgtot     38.5996f   38.5996f   11.8206f   11.8206f   71.1344f  241.3107f
+  cstot     39.1387f   39.1387f   12.6256f   12.6256f   76.2108f  273.4801f
+  cbtot     22.6649f   22.6649f    8.3901f    8.3901f   49.3229f  173.3593f
+  cgs       31.2225f   31.2225f    9.2715f    9.2715f   56.0797f  202.1892f
+  cgd        7.6357f    7.6357f    1.7928f    1.7928f   10.5612f   39.0547f
 
 
 
  subckt                        
  element  0:m7       0:m8      
- model    0:pch.3    0:pch.8   
+ model    0:pch.5    0:pch.10  
  region     Saturati   Saturati
-  id      -128.0634u  -12.4852u
+  id      -137.5035u  -12.4970u
   ibs        0.         0.     
-  ibd      487.3034f  355.1415f
-  vgs     -355.1257m -355.1257m
-  vds     -487.1469m -355.1257m
+  ibd      509.6504f  320.0204f
+  vgs     -320.0046m -320.0046m
+  vds     -509.4938m -320.0046m
   vbs        0.         0.     
-  vth     -229.7377m -228.3505m
-  vdsat   -133.3157m -134.4447m
-  vod     -125.3880m -126.7751m
-  beta      15.1677m    1.4899m
+  vth     -265.4913m -265.0951m
+  vdsat    -92.2968m  -92.2096m
+  vod      -54.5133m  -54.9095m
+  beta      41.7728m    4.0803m
   gam eff  162.3000m  162.3000m
-  gm         1.6137m  156.5801u
-  gds       22.7371u    2.6703u
-  gmb      196.5255u   18.9832u
-  cdtot     36.5249f    3.9645f
-  cgtot    218.3208f   22.0420f
-  cstot    215.4514f   21.6428f
-  cbtot     68.2055f    7.0156f
-  cgs      208.0520f   20.8993f
-  cgd       14.2353f    1.5428f
+  gm         2.3300m  214.3592u
+  gds       56.9800u    6.0361u
+  gmb      327.9951u   30.1208u
+  cdtot     35.6393f    3.9506f
+  cgtot     77.5994f    7.9285f
+  cstot     86.7611f    8.7124f
+  cbtot     56.5591f    5.9116f
+  cgs       64.0704f    6.4243f
+  cgd       13.4882f    1.5012f
 
 
 
@@ -10559,9 +10584,9 @@ Model Name: pch.8
  ac simulation of an nmos input single-ended diff pair                          
   ******  ac analysis                      tnom=  25.000 temp=  25.000          
  ******  
-   gain=  5.7107E+01
-   unity_gain=  1.1208E+08
-   phase_margin=  7.9250E+01
+   gain=  4.7391E+01
+   unity_gain=  1.5007E+08
+   phase_margin=  8.5375E+01
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -10570,7 +10595,7 @@ Model Name: pch.8
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        234 kbytes
+           total memory used        235 kbytes
 
   # nodes =      12 # elements=      17
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       8
@@ -10578,16 +10603,16 @@ Model Name: pch.8
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.01           1           9
-    ac analysis        0.10         417         417
-    readin             0.32
+    op point           0.01           1          10
+    ac analysis        0.11         417         417
+    readin             0.31
     errchk             0.02
     setup              0.01
     output             0.00
            total cpu time          0.47 seconds
            total elapsed time         1 seconds
-               job started at  15:49:24 06/22/2019
-               job ended   at  15:49:24 06/22/2019
+               job started at  15:53:06 06/22/2019
+               job ended   at  15:53:06 06/22/2019
 
 
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
