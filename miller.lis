@@ -8958,7 +8958,7 @@
  .measure   ac  phase_margin   find  vp(ss, vout) when vdb(vout, ss)=0
  .probe
 
- **warning**  unknown analysis mode:  ‹ÁT¿P .. line ignored
+ **warning**  unknown analysis mode:  ‹ÁF¿P .. line ignored
 
  
 Model Name: pch.5  
@@ -10605,14 +10605,14 @@ Model Name: pch.15
 
     op point           0.01           1           8
     ac analysis        0.11         425         425
-    readin             0.32
+    readin             0.31
     errchk             0.02
     setup              0.01
     output             0.00
-           total cpu time          0.48 seconds
+           total cpu time          0.46 seconds
            total elapsed time         1 seconds
-               job started at  16:14:15 06/22/2019
-               job ended   at  16:14:16 06/22/2019
+               job started at  16:23:26 06/22/2019
+               job ended   at  16:23:27 06/22/2019
 
 
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini

@@ -1,0 +1,747 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1246x628+28+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+35+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+40+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+43+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+48+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+54+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+57+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+61+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+62+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+63+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+64+20
+Mdi:ArrangeIcons
+wm geometry . 1246x628+66+20
+Graph:Select Graph0
+Graph:DSel 0
+Mdi:FullSize
+GrXY:NewGraph
+# Graph1
+Mdi:Close
+Graph:Select Graph0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:Select Graph0
+Mdi:ArrangeIcons
+AimCalc
+AimBarItem:Hide .aimCalc
+wm withdraw .aimCalcConstForm
+AimBarItem:Show .aimCalc
+AimBarItem:Hide .aimCalc
+wm withdraw .aimCalcConstForm
+wm geometry .sigmgr 367x200+996+121
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel 0
+Graph:DSel 0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph:DSel 0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+GrPolar:NewGraph
+# Graph2
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/miller.ac0 1 openonly
+# PF:1
+Mdi:Close
+Graph:Select Graph0
+ScopeSigMgr:Unload 0 {{(1) miller.ac0}}
+wm geometry .sigmgr 367x200+976+121
+wm geometry .sigmgr 367x200+969+121
+wm geometry .sigmgr 367x200+961+121
+wm geometry .sigmgr 367x200+952+124
+wm geometry .sigmgr 367x200+922+129
+wm geometry .sigmgr 367x200+915+131
+wm geometry .sigmgr 367x200+909+132
+wm geometry .sigmgr 367x200+901+135
+wm geometry .sigmgr 367x200+894+137
+wm geometry .sigmgr 367x200+880+140
+wm geometry .sigmgr 367x200+866+145
+wm geometry .sigmgr 367x200+840+148
+wm geometry .sigmgr 367x200+804+153
+wm geometry .sigmgr 367x200+764+158
+wm geometry .sigmgr 367x200+717+164
+wm geometry .sigmgr 367x200+675+172
+wm geometry .sigmgr 367x200+633+177
+wm geometry .sigmgr 367x200+595+186
+wm geometry .sigmgr 367x200+562+188
+wm geometry .sigmgr 367x200+533+192
+wm geometry .sigmgr 367x200+512+197
+wm geometry .sigmgr 367x200+499+199
+wm geometry .sigmgr 367x200+493+200
+wm geometry .sigmgr 367x200+490+201
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/miller.ac0 1 openonly
+# PF:2
+wm geometry .sigmgr._PF:2 200x331+691+383
+wm geometry .sigmgr._PF:2 200x331+725+378
+wm geometry .sigmgr._PF:2 200x331+749+374
+wm geometry .sigmgr._PF:2 200x331+793+359
+wm geometry .sigmgr._PF:2 200x331+855+342
+wm geometry .sigmgr._PF:2 200x331+942+318
+wm geometry .sigmgr._PF:2 200x331+988+304
+wm geometry .sigmgr._PF:2 200x331+1087+259
+wm geometry .sigmgr._PF:2 200x331+1101+250
+wm geometry .sigmgr._PF:2 200x331+1110+230
+wm geometry .sigmgr._PF:2 200x331+1110+226
+wm geometry .sigmgr._PF:2 200x331+1110+224
+wm geometry .sigmgr._PF:2 200x331+1110+223
+wm geometry .sigmgr._PF:2 200x331+1108+222
+wm geometry .sigmgr._PF:2 200x331+1102+219
+wm geometry .sigmgr._PF:2 200x331+1078+204
+wm geometry .sigmgr._PF:2 200x331+1071+200
+pf:read PF:2 v(vout)
+# WF:2:1
+Graph addsignal {WF:2:1 WF:2:1} -region {new new} -yview {cphasedeg(y) db(y)} -xview {real(x) real(x)} -tracehi {2 2}
+# Signal0 Signal1
+wm geometry .sigmgr._PF:2 200x331+1064+200
+wm geometry .sigmgr._PF:2 200x331+1062+200
+wm geometry .sigmgr._PF:2 200x331+1061+200
+wm geometry .sigmgr._PF:2 200x331+1058+200
+wm geometry .sigmgr._PF:2 200x331+1053+203
+wm geometry .sigmgr._PF:2 200x331+1042+208
+wm geometry .sigmgr._PF:2 200x331+1010+216
+wm geometry .sigmgr._PF:2 200x331+946+221
+wm geometry .sigmgr._PF:2 200x331+878+221
+wm geometry .sigmgr._PF:2 200x331+831+221
+wm geometry .sigmgr._PF:2 200x331+815+221
+wm geometry .sigmgr._PF:2 200x331+814+222
+wm geometry .sigmgr._PF:2 200x331+813+222
+wm geometry .sigmgr._PF:2 200x331+812+224
+wm geometry .sigmgr._PF:2 200x331+807+231
+wm geometry .sigmgr._PF:2 200x331+802+238
+wm geometry .sigmgr._PF:2 200x331+795+245
+wm geometry .sigmgr._PF:2 200x331+787+251
+wm geometry .sigmgr._PF:2 200x331+782+253
+wm geometry .sigmgr._PF:2 200x331+776+254
+wm geometry .sigmgr._PF:2 200x331+774+254
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+wm geometry .sigmgr._PF:2 200x331+785+252
+wm geometry .sigmgr._PF:2 200x331+788+252
+wm geometry .sigmgr._PF:2 200x331+796+248
+wm geometry .sigmgr._PF:2 200x331+805+245
+wm geometry .sigmgr._PF:2 200x331+834+241
+wm geometry .sigmgr._PF:2 200x331+843+239
+wm geometry .sigmgr._PF:2 200x331+849+236
+wm geometry .sigmgr._PF:2 200x331+855+235
+wm geometry .sigmgr._PF:2 200x331+859+233
+wm geometry .sigmgr._PF:2 200x331+862+231
+wm geometry .sigmgr._PF:2 200x331+863+230
+wm geometry .sigmgr._PF:2 200x331+864+230
+wm geometry .sigmgr._PF:2 200x331+866+229
+wm geometry .sigmgr._PF:2 200x331+868+228
+wm geometry .sigmgr._PF:2 200x331+870+227
+wm geometry .sigmgr._PF:2 200x331+871+227
+wm geometry .sigmgr._PF:2 200x331+874+227
+wm geometry .sigmgr._PF:2 200x331+878+226
+wm geometry .sigmgr._PF:2 200x331+881+226
+wm geometry .sigmgr._PF:2 200x331+884+224
+wm geometry .sigmgr._PF:2 200x331+886+223
+wm geometry .sigmgr._PF:2 200x331+888+222
+wm geometry .sigmgr._PF:2 200x331+890+221
+wm geometry .sigmgr._PF:2 200x331+892+220
+wm geometry .sigmgr._PF:2 200x331+892+219
+wm geometry .sigmgr._PF:2 200x331+893+219
+wm geometry .sigmgr._PF:2 200x331+893+218
+wm geometry .sigmgr._PF:2 200x331+894+217
+wm geometry .sigmgr._PF:2 200x331+895+216
+wm geometry .sigmgr._PF:2 200x331+896+213
+wm geometry .sigmgr._PF:2 200x331+898+212
+wm geometry .sigmgr._PF:2 200x331+901+210
+wm geometry .sigmgr._PF:2 200x331+904+207
+wm geometry .sigmgr._PF:2 200x331+907+206
+wm geometry .sigmgr._PF:2 200x331+908+206
+wm geometry .sigmgr._PF:2 200x331+910+206
+wm geometry .sigmgr._PF:2 200x331+912+204
+wm geometry .sigmgr._PF:2 200x331+914+204
+wm geometry .sigmgr._PF:2 200x331+916+203
+wm geometry .sigmgr._PF:2 200x331+919+203
+wm geometry .sigmgr._PF:2 200x331+921+202
+wm geometry .sigmgr._PF:2 200x331+922+200
+wm geometry .sigmgr._PF:2 200x331+925+200
+wm geometry .sigmgr._PF:2 200x331+930+198
+wm geometry .sigmgr._PF:2 200x331+933+197
+wm geometry .sigmgr._PF:2 200x331+939+196
+wm geometry .sigmgr._PF:2 200x331+944+195
+wm geometry .sigmgr._PF:2 200x331+951+194
+wm geometry .sigmgr._PF:2 200x331+959+194
+wm geometry .sigmgr._PF:2 200x331+964+192
+wm geometry .sigmgr._PF:2 200x331+967+192
+wm geometry .sigmgr._PF:2 200x331+970+192
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+490+208
+wm geometry .sigmgr 367x200+490+213
+wm geometry .sigmgr 367x200+490+220
+wm geometry .sigmgr 367x200+490+230
+wm geometry .sigmgr 367x200+491+243
+wm geometry .sigmgr 367x200+493+253
+wm geometry .sigmgr 367x200+493+264
+wm geometry .sigmgr 367x200+496+275
+wm geometry .sigmgr 367x200+497+284
+wm geometry .sigmgr 367x200+501+295
+wm geometry .sigmgr 367x200+505+304
+wm geometry .sigmgr 367x200+509+311
+wm geometry .sigmgr 367x200+514+318
+wm geometry .sigmgr 367x200+519+326
+wm geometry .sigmgr 367x200+523+334
+wm geometry .sigmgr 367x200+527+343
+wm geometry .sigmgr 367x200+532+352
+wm geometry .sigmgr 367x200+539+365
+wm geometry .sigmgr 367x200+542+375
+wm geometry .sigmgr 367x200+546+386
+wm geometry .sigmgr 367x200+548+390
+wm geometry .sigmgr 367x200+550+393
+wm geometry .sigmgr 367x200+550+394
+GrMeas:PhaseMargin Graph0 Signal1 degrees xyrangeAll 0 - activeGraph {{5}  {-}  {1}  {20}  {No}  {No}  {50}  {10}} 1 {} -180
+# M:0
+GrMeas:Threshold Graph0 Signal1 {} either xyrangeAll
+# M:1
+Graph:DSel
+GrMeas:Select Graph0 M:1 0
+GrMeas:MoveYLevel Graph0 M:1 0 0.11077374173154
+# M:2
+wm geometry .sigmgr 367x200+550+403
+wm geometry .sigmgr 367x200+550+404
+wm geometry .sigmgr 367x200+551+407
+wm geometry .sigmgr 367x200+552+410
+wm geometry .sigmgr 367x200+552+415
+wm geometry .sigmgr 367x200+553+419
+wm geometry .sigmgr 367x200+555+427
+wm geometry .sigmgr 367x200+555+435
+wm geometry .sigmgr 367x200+558+443
+wm geometry .sigmgr 367x200+561+449
+wm geometry .sigmgr 367x200+562+456
+wm geometry .sigmgr 367x200+564+459
+wm geometry .sigmgr 367x200+564+464
+wm geometry .sigmgr 367x200+565+467
+wm geometry .sigmgr 367x200+566+468
+wm geometry .sigmgr 367x200+567+470
+wm geometry .sigmgr 367x200+568+471
+wm geometry .sigmgr 367x200+569+474
+wm geometry .sigmgr 367x200+569+476
+wm geometry .sigmgr 367x200+569+478
+wm geometry .sigmgr 367x200+569+480
+wm geometry .sigmgr 367x200+569+484
+wm geometry .sigmgr 367x200+569+487
+wm geometry .sigmgr 367x200+569+489
+wm geometry .sigmgr 367x200+569+491
+wm geometry .sigmgr 367x200+569+494
+wm geometry .sigmgr 367x200+569+495
+wm geometry .sigmgr 367x200+569+497
+wm geometry .sigmgr 367x200+570+498
+wm geometry .sigmgr._PF:2 200x331+970+205
+wm geometry .sigmgr._PF:2 200x331+970+209
+wm geometry .sigmgr._PF:2 200x331+969+216
+wm geometry .sigmgr._PF:2 200x331+966+222
+wm geometry .sigmgr._PF:2 200x331+959+231
+wm geometry .sigmgr._PF:2 200x331+953+240
+wm geometry .sigmgr._PF:2 200x331+933+269
+wm geometry .sigmgr._PF:2 200x331+922+285
+wm geometry .sigmgr._PF:2 200x331+903+308
+wm geometry .sigmgr._PF:2 200x331+880+334
+wm geometry .sigmgr._PF:2 200x331+852+360
+wm geometry .sigmgr._PF:2 200x331+828+384
+wm geometry .sigmgr._PF:2 200x331+801+412
+wm geometry .sigmgr._PF:2 200x331+777+441
+wm geometry .sigmgr._PF:2 200x331+760+465
+wm geometry .sigmgr._PF:2 200x331+743+488
+wm geometry .sigmgr._PF:2 200x331+726+512
+wm geometry .sigmgr._PF:2 200x331+714+536
+wm geometry .sigmgr._PF:2 200x331+706+554
+wm geometry .sigmgr._PF:2 200x331+701+566
+wm geometry .sigmgr._PF:2 200x331+698+578
+wm geometry .sigmgr._PF:2 200x331+696+586
+wm geometry .sigmgr._PF:2 200x331+696+591
+wm geometry .sigmgr._PF:2 200x331+696+593
+wm geometry .sigmgr._PF:2 200x331+696+589
+wm geometry .sigmgr._PF:2 200x331+724+537
+wm geometry .sigmgr._PF:2 200x331+724+528
+wm geometry .sigmgr._PF:2 200x331+724+524
+wm geometry .sigmgr._PF:2 200x331+732+524
+wm geometry .sigmgr._PF:2 200x331+742+524
+wm geometry .sigmgr._PF:2 200x331+767+519
+wm geometry .sigmgr._PF:2 200x331+855+500
+wm geometry .sigmgr._PF:2 200x331+877+490
+wm geometry .sigmgr._PF:2 200x331+929+477
+wm geometry .sigmgr._PF:2 200x331+989+471
+wm geometry .sigmgr._PF:2 200x331+1005+468
+wm geometry .sigmgr._PF:2 200x331+1014+465
+wm geometry .sigmgr._PF:2 200x331+1021+465
+wm geometry .sigmgr._PF:2 200x331+1027+465
+wm geometry .sigmgr._PF:2 200x331+1031+465
+wm geometry .sigmgr._PF:2 200x331+1033+465
+wm geometry .sigmgr._PF:2 200x331+1035+465
+wm geometry .sigmgr 367x200+586+491
+wm geometry .sigmgr 367x200+591+489
+wm geometry .sigmgr 367x200+596+488
+wm geometry .sigmgr 367x200+599+487
+wm geometry .sigmgr 367x200+600+487
+wm geometry .sigmgr 367x200+603+486
+wm geometry .sigmgr 367x200+605+486
+wm geometry .sigmgr 367x200+607+485
+wm geometry .sigmgr 367x200+610+484
+wm geometry .sigmgr 367x200+613+483
+wm geometry .sigmgr 367x200+614+483
+wm geometry .sigmgr 367x200+615+481
+wm geometry .sigmgr 367x200+617+481
+wm geometry .sigmgr 367x200+616+481
+wm geometry .sigmgr 367x200+615+481
+wm geometry .sigmgr 367x200+614+481
+wm geometry .sigmgr 367x200+613+481
+wm geometry .sigmgr 367x200+612+480
+wm geometry .sigmgr 367x200+612+478
+wm geometry .sigmgr 367x200+612+477
+wm geometry .sigmgr 367x200+612+475
+wm geometry .sigmgr 367x200+612+469
+wm geometry .sigmgr 367x200+615+463
+wm geometry .sigmgr 367x200+616+461
+wm geometry .sigmgr 367x200+621+454
+wm geometry .sigmgr 367x200+626+447
+wm geometry .sigmgr 367x200+630+442
+wm geometry .sigmgr 367x200+633+439
+wm geometry .sigmgr 367x200+636+435
+wm geometry .sigmgr 367x200+637+434
+wm geometry .sigmgr 367x200+637+433
+wm geometry .sigmgr 367x200+641+431
+wm geometry .sigmgr 367x200+644+430
+wm geometry .sigmgr 367x200+646+430
+wm geometry .sigmgr 367x200+650+428
+wm geometry .sigmgr 367x200+652+428
+wm geometry .sigmgr 367x200+656+426
+wm geometry .sigmgr 367x200+660+425
+wm geometry .sigmgr 367x200+662+424
+wm geometry .sigmgr 367x200+663+424
+wm geometry .sigmgr 367x200+664+422
+wm geometry .sigmgr 367x200+665+421
+wm geometry .sigmgr 367x200+666+421
+wm geometry .sigmgr 367x200+667+420
+wm geometry .sigmgr 367x200+669+419
+wm geometry .sigmgr 367x200+670+418
+ScopeSigMgr:Unload 0 {{(1) miller.ac0}}
+ScopeSigMgr:Unload 0 {{(1) miller.ac0}}
+ScopeSigMgr:Unload 0 {{(1) miller.ac0}}
+ScopeSigMgr:Unload 0 {{(1) miller.ac0}}
+ScopeSigMgr:Unload 0 {{(1) miller.ac0}}
+Graph0 delsignal Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/transiant.tr0 1 openonly
+# PF:4
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+Graph:DSel
+Graph:Select Graph0
+Graph:DSel
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal7
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal20
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal21
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal19
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal18
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal17
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal16
+pf:read PF:4 v(vout)
+# WF:4:1
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal22
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal15
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal14
+ScopeSigMgr:Unload 0 {{(1) transiant.tr0}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
+Graph0 delsignal Signal2
+Graph0 delsignal Signal3
+Graph0 delsignal Signal4
+Graph0 delsignal Signal5
+Graph0 delsignal Signal6
+Graph0 delsignal Signal7
+Graph0 delsignal Signal8
+Graph0 delsignal Signal9
+Graph0 delsignal Signal10
+Graph0 delsignal Signal11
+Graph0 delsignal Signal12
+Graph0 delsignal Signal13
+Graph0 delsignal Signal14
+Graph0 delsignal Signal15
+Graph0 delsignal Signal16
+Graph0 delsignal Signal17
+Graph0 delsignal Signal18
+Graph0 delsignal Signal19
+Graph0 delsignal Signal20
+Graph0 delsignal Signal21
+Graph0 delsignal Signal22
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal13
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal12
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal11
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal10
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal9
+Graph addsignal WF:4:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal8
+Graph:DSel
+Graph:Select Graph0
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/transiant.tr0 1 openonly
+# PF:5
+Graph:DSel
+pf:read PF:5 v(vin+)
+# WF:5:1
+Graph addsignal WF:5:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:5 v(vout)
+# WF:5:2
+Graph addsignal WF:5:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph0
+wm geometry .sigmgr._PF:5 200x331+839+341
+wm geometry .sigmgr._PF:5 200x331+887+336
+wm geometry .sigmgr._PF:5 200x331+995+318
+wm geometry .sigmgr._PF:5 200x331+1090+306
+wm geometry .sigmgr._PF:5 200x331+1144+298
+wm geometry .sigmgr._PF:5 200x331+1155+297
+wm geometry .sigmgr._PF:5 200x331+1156+297
+wm geometry .sigmgr._PF:5 200x331+1156+299
+wm geometry .sigmgr._PF:5 200x331+1156+301
+wm geometry .sigmgr._PF:5 200x331+1158+306
+wm geometry .sigmgr._PF:5 200x331+1158+311
+wm geometry .sigmgr._PF:5 200x331+1158+314
+wm geometry .sigmgr._PF:5 200x331+1158+320
+wm geometry .sigmgr._PF:5 200x331+1158+324
+wm geometry .sigmgr._PF:5 200x331+1158+326
+wm geometry .sigmgr._PF:5 200x331+1158+328
+wm geometry .sigmgr._PF:5 200x331+1158+329
+wm geometry .sigmgr._PF:5 200x331+1158+330
+wm geometry .sigmgr 367x200+781+418
+wm geometry .sigmgr 367x200+879+418
+wm geometry .sigmgr 367x200+922+418
+wm geometry .sigmgr 367x200+993+418
+wm geometry .sigmgr 367x200+1031+418
+wm geometry .sigmgr 367x200+1057+418
+wm geometry .sigmgr 367x200+1080+418
+wm geometry .sigmgr 367x200+1095+418
+wm geometry .sigmgr 367x200+1099+419
+wm geometry .sigmgr 367x200+1105+419
+wm geometry .sigmgr 367x200+1108+419
+wm geometry .sigmgr 367x200+1113+420
+wm geometry .sigmgr 367x200+1116+420
+wm geometry .sigmgr 367x200+1125+421
+wm geometry .sigmgr 367x200+1125+423
+wm geometry .sigmgr 367x200+1125+424
+wm geometry .sigmgr 367x200+1125+425
+wm geometry .sigmgr 367x200+1125+426
+wm geometry .sigmgr 367x200+1125+429
+wm geometry .sigmgr 367x200+1125+430
+wm geometry .sigmgr 367x200+1125+431
+Mdi:ArrangeIcons
+wm geometry . 1246x628+61+21
+Mdi:ArrangeIcons
+wm geometry . 1246x628+56+22
+Mdi:ArrangeIcons
+wm geometry . 1246x628+32+32
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-21+40
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-56+48
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-75+54
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-90+57
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-97+59
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-99+59
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-101+59
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-102+60
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-106+62
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-109+64
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-112+65
+Mdi:ArrangeIcons
+wm geometry . 1246x628+-105+63
+Mdi:ArrangeIcons
+wm geometry . 1246x628+46+16
+Mdi:ArrangeIcons
+wm geometry . 1246x628+88+-6
+Mdi:ArrangeIcons
+wm geometry . 1246x628+89+-6
+Mdi:ArrangeIcons
+wm geometry . 1246x628+91+-6
+Mdi:ArrangeIcons
+wm geometry . 1246x628+92+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+93+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+94+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+95+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+96+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+97+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+94+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+90+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+78+-7
+Mdi:ArrangeIcons
+wm geometry . 1246x628+64+-6
+Mdi:ArrangeIcons
+wm geometry . 1246x628+56+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+57+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+58+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+60+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+61+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+62+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+63+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+64+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+65+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+66+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+67+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+68+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+69+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+70+-4
+Mdi:ArrangeIcons
+wm geometry . 1246x628+70+0
+Graph:DSel
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry .sigmgr 367x200+1113+431
+wm geometry .sigmgr 367x200+903+409
+wm geometry .sigmgr 367x200+512+355
+wm geometry .sigmgr 367x200+459+347
+wm geometry .sigmgr 367x200+422+342
+wm geometry .sigmgr 367x200+396+337
+wm geometry .sigmgr 367x200+382+334
+wm geometry .sigmgr 367x200+376+332
+wm geometry .sigmgr 367x200+373+331
+wm geometry .sigmgr 367x200+373+330
+wm geometry .sigmgr 367x200+373+328
+wm geometry .sigmgr 367x200+370+326
+wm geometry .sigmgr._PF:5 200x331+1137+326
+wm geometry .sigmgr._PF:5 200x331+1088+321
+wm geometry .sigmgr._PF:5 200x331+1006+316
+wm geometry .sigmgr._PF:5 200x331+917+309
+wm geometry .sigmgr._PF:5 200x331+852+300
+wm geometry .sigmgr._PF:5 200x331+835+299
+wm geometry .sigmgr._PF:5 200x331+812+296
+wm geometry .sigmgr._PF:5 200x331+805+294
+wm geometry .sigmgr._PF:5 200x331+802+293
+Mdi:ArrangeIcons
+ScopeSigMgr:Unload 0 {{(1) transiant.tr0}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/transiant.tr0 1 openonly
+# PF:6
+Mdi:ArrangeIcons
+Graph:DSel 0
+Graph:DSel 0
+Graph:DSel 0
+Mdi:ArrangeIcons
+Graph:DSel 0
+Graph:DSel
+pf:read PF:6 v(vin+)
+# WF:6:1
+Graph addsignal WF:6:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:6 v(vout)
+# WF:6:2
+Graph addsignal WF:6:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:DSel
+Graph:Select Graph0
+wm geometry .sigmgr._PF:6 200x331+746+400
+wm geometry .sigmgr._PF:6 200x331+781+409
+wm geometry .sigmgr._PF:6 200x331+816+419
+wm geometry .sigmgr._PF:6 200x331+858+427
+wm geometry .sigmgr._PF:6 200x331+909+438
+wm geometry .sigmgr._PF:6 200x331+961+454
+wm geometry .sigmgr._PF:6 200x331+1009+468
+wm geometry .sigmgr._PF:6 200x331+1066+486
+wm geometry .sigmgr._PF:6 200x331+1126+505
+wm geometry .sigmgr._PF:6 200x331+1188+521
+wm geometry .sigmgr._PF:6 200x331+1242+535
+wm geometry .sigmgr._PF:6 200x331+1276+546
+wm geometry .sigmgr._PF:6 200x331+1276+557
+wm geometry .sigmgr._PF:6 200x331+1276+565
+wm geometry .sigmgr._PF:6 200x331+1276+570
+wm geometry .sigmgr._PF:6 200x331+1276+573
+wm geometry .sigmgr._PF:6 200x331+1276+574
+wm geometry .sigmgr._PF:6 200x331+1270+572
+wm geometry .sigmgr._PF:6 200x331+1037+496
+wm geometry .sigmgr 367x200+389+351
+wm geometry .sigmgr 367x200+416+406
+wm geometry .sigmgr 367x200+452+472
+wm geometry .sigmgr 367x200+491+549
+wm geometry .sigmgr 367x200+528+625
+wm geometry .sigmgr 367x200+563+686
+wm geometry .sigmgr 367x200+591+711
+wm geometry .sigmgr 367x200+598+711
+wm geometry .sigmgr 367x200+606+711
+wm geometry .sigmgr 367x200+609+711
+wm geometry .sigmgr 367x200+612+711
+wm geometry .sigmgr 367x200+616+711
+wm geometry .sigmgr 367x200+617+711
+wm geometry .sigmgr 367x200+618+711
+wm geometry .sigmgr 367x200+619+711
+wm geometry .sigmgr 367x200+626+711
+wm geometry .sigmgr 367x200+643+703
+wm geometry .sigmgr 367x200+713+694
+wm geometry .sigmgr 367x200+726+692
+wm geometry .sigmgr 367x200+726+691
+wm geometry .sigmgr 367x200+727+682
+wm geometry .sigmgr 367x200+727+681
+Mdi:ArrangeIcons
+Graph:DSel
+GrMeas:Risetime Graph0 Signal0 {0.1 0.5 0.9} default default xyrangeAll
+# M:3
+GrMeas:Slewrate Graph0 Signal0 {0.1 0.5 0.9} either default default xyrangeAll
+# M:4
+Graph:DSel
+GrMeas:Select Graph0 M:3 6
+Mdi:ArrangeIcons
+Graph:DSel
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{0.84745 0.8524 } {25.3n 28.6n } {0.8898 0.9096 }}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{0.8432 0.8564 } {23.25n 31.5n } {0.8745 0.924 }}
+Graph axisconfig {AxisY(0,0) AxisX(0) AxisY(1,0)} -range {{0.833 0.866 } {18.15n 36.3n } {0.832 0.964 }}
+ScopeSigMgr:Unload 0 {{(1) transiant.tr0}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/transiant.tr0 1 openonly
+# PF:9
+wm geometry .sigmgr._PF:9 200x331+683+369
+wm geometry .sigmgr._PF:9 200x331+683+362
+wm geometry .sigmgr._PF:9 200x331+683+349
+wm geometry .sigmgr._PF:9 200x331+683+343
+wm geometry .sigmgr._PF:9 200x331+683+340
+pf:read PF:9 v(vout)
+# WF:9:1
+Graph addsignal WF:9:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:9 v(vin+)
+# WF:9:2
+Graph addsignal WF:9:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect AxisX(0) add
+# AxisX(0)
+GrMeas:SettleTime Graph0 Signal0 default 5 amplitude xyrangeAll
+# M:5
+Graph:DSel
+ScopeSigMgr:Unload 0 {{(1) transiant.tr0}}
+ScopeSigMgr:Unload 0 {{(1) transiant.tr0}}
+Graph0 delsignal Signal0
+Graph0 delsignal Signal1
