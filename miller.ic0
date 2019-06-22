@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "13:06:59 06/22/2019 "
+* "rundate" "15:49:24 06/22/2019 "
 * "netlist" "c:\users\caspian\desktop\primary\miller.sp "
 * "runtitle" "ac simulation of an nmos input single-ended diff pair"
 * time =    0.            
@@ -10,15 +10,15 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ 1 = 826.8899m       
-+ 2 = 728.9079m       
-+ 3 = 405.0614m       
-+ 4 = 404.9089m       
-+ 5 = 404.9089m       
++ 1 = 844.8743m       
++ 2 = 712.8531m       
++ 3 = 383.4760m       
++ 4 = 383.3759m       
++ 5 = 383.3759m       
 + dd =   1.2000        
 + im0 = 300.0000m       
 + ss =   0.            
 + vin+ = 300.0000m       
 + vin- = 300.0000m       
-+ vout = 511.1015m       
++ vout = 608.4610m       
 ***   END: Saved Operating Point ***                     
