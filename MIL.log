@@ -4,14 +4,11 @@ nil
 designOpen("c:\\users\\caspian\\desktop\\primary\\miller.sp");
 "D0"
 t
-quit();
-exit
-pnlDeletePane(1, 1);
-nil
-nil
-node(D0,"A0","HERTZ"));
+pnlAddCurve(1, node(D0,"A0","vm(vin+)","S-1"), node(D0,"A0","HERTZ"));
 nil
 pnlAddCurve(1, node(D0,"A0","vm(vout)","S-1"), node(D0,"A0","HERTZ"));
+nil
+pnlAddCurve(1, node(D0,"A0","pp(vout,ss)"), node(D0,"A0","HERTZ"));
 nil
 quit();
 exit

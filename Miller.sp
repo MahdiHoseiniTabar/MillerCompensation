@@ -15,7 +15,7 @@ M5	vout	4	ss	ss	nch	W=36.18u	L=0.2u	M=1
 M6	vout	1	dd	dd	pch	W=144.75u	L=0.2u	M=1
 
 M7	2	1	dd	dd	pch	W=46u	L=0.2u	M=1
-M8	1	1	dd	dd	pch	W=0.76u	L=0.2u	M=1
+M8	1	1	dd	dd	pch	W=1u	L=0.2u	M=1
 
 Ib	1	ss	dc=12.50u
 
@@ -24,7 +24,7 @@ vss	ss	0	dc=0
 
 Cc	vout	5	1p
 Cl	vout	ss	1p
-Rc	4	5	300
+Rc	4	5	50
 
 ***********************************************************
 ** AC simulation
@@ -33,7 +33,7 @@ vinac	vin+	im0	ac=1
 vindc1    im0       ss      dc=0.3
 vindc2    vin-      ss      dc=0.3
 
-.ac   dec  50  10    2g
+.ac   dec  50  10    3g
 .option  acout=0
 .probe   vdb(vout, ss)
 .probe   vp(vout, ss)
