@@ -1,8 +1,7 @@
 Mdi:ArrangeIcons
 Mdi:FullSize
 Mdi:ArrangeIcons
-Mdi:ArrangeIcons
-Mdi:ArrangeIcons
+Mdi:Mdi:ArrangeIcoMdi:ArrangeIcons
 Mdi:ArrangeIcons
 ScopeSigMgr:loadpffile C:/Users/Caspian/Desktop/Primary/setteling.tr0 1 openonly
 # PF:1
@@ -40,8 +39,8 @@ wm geometry .sigmgr._PF:1 200x331+1217+561
 wm geometry .sigmgr._PF:1 200x331+1232+561
 wm geometry .sigmgr._PF:1 200x331+1250+561
 wm geometry .sigmgr._PF:1 200x331+1264+561
-wm geometry .sigmgr._PF:1 200x331+1280+561
-wm geometry .sigmgr._PF:1 200x331+1287+555
+wm geometry .sigmgr._PF:1 200Mdi:ArrangeIcons
+geometry .sigmgr._PF:1 200x331+1287+555
 wm geometry .sigmgr._PF:1 200x331+1287+551
 GrMeas:SettleTime Graph0 Signal2 default 5 amplitude xyrangeAll
 # M:0
@@ -74,3 +73,5 @@ ScopeSigMgr:Unload 0 {{(1) setteling.tr0}}
 Graph0 delsignal Signal0
 Graph0 delsignal Signal1
 Graph0 delsignal Signal2
+Mdi:ArrangeIcons
+Graph:DSel 0

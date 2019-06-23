@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "16:23:26 06/22/2019 "
+* "rundate" "17:52:33 06/22/2019 "
 * "netlist" "c:\users\caspian\desktop\primary\miller.sp "
 * "runtitle" "ac simulation of an nmos input single-ended diff pair"
 * time =    0.            
