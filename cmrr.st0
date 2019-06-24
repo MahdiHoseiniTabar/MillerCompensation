@@ -1,9 +1,9 @@
 ***** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******
- Input File: e:\term6\elec3\electronic3_project\miller.sp
+ Input File: e:\term6\elec3\electronic3_project\cmrr.sp
  lic:
  lic: FLEXlm: v8.5b
  lic: USER:   ALFA RAYAN           HOSTNAME: DESKTOP-7EN4FFT
- lic: HOSTID: "1831bf1cf576 f85971f1c01b f85971f1c01c fa5971f1c01b" PID:      25
+ lic: HOSTID: "1831bf1cf576 f85971f1c01b f85971f1c01c fa5971f1c01b" PID:      84
  lic: Using FLEXlm license file:
  lic: C:\Flexlm\spice_2007-09.lic
  lic: Checkout 1 hspice
@@ -11,19 +11,19 @@
  lic: NODE LOCKED license on hostid "1831bf1cf576 f85971f1c01b f85971f1c01c fa59
  lic:
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
- init: begin read circuit files,  cpu clock=  1.56E-01
+ init: begin read circuit files,  cpu clock=  1.71E-01
        option acout    =     0.00
- init: end read circuit files,  cpu clock=  2.18E-01 memory=    156 kb
- init: begin check errors,  cpu clock=  2.18E-01
- init: end check errors,  cpu clock=  2.50E-01 memory=    229 kb
- init: begin setup matrix, pivot=    10 cpu clock=  2.50E-01
-       establish matrix -- done,  cpu clock=  2.50E-01 memory=    232 kb
-       re-order matrix -- done,  cpu clock=  2.50E-01 memory=    233 kb
- init: end setup matrix,  cpu clock=  2.50E-01 memory=    248 kb
- dcop: begin dcop,  cpu clock=  2.50E-01
- dcop: end dcop,  cpu clock=  2.50E-01 memory=    248 kb  tot_iter=       9
- output: e:\term6\elec3\electronic3_project\miller.ma0
- sweep: ac ac0    begin, #sweeps= 425 cpu clock=  2.65E-01
+ init: end read circuit files,  cpu clock=  2.34E-01 memory=    156 kb
+ init: begin check errors,  cpu clock=  2.34E-01
+ init: end check errors,  cpu clock=  2.65E-01 memory=    229 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  2.65E-01
+       establish matrix -- done,  cpu clock=  2.65E-01 memory=    233 kb
+       re-order matrix -- done,  cpu clock=  2.65E-01 memory=    234 kb
+ init: end setup matrix,  cpu clock=  2.65E-01 memory=    250 kb
+ dcop: begin dcop,  cpu clock=  2.65E-01
+ dcop: end dcop,  cpu clock=  2.65E-01 memory=    250 kb  tot_iter=       9
+ output: e:\term6\elec3\electronic3_project\cmrr.ma0
+ sweep: ac ac0    begin, #sweeps= 425 cpu clock=  2.81E-01
  ac: frequency=    1.05E+01
  ac: frequency=    6.92E+01
  ac: frequency=    4.79E+02
@@ -35,7 +35,7 @@
  ac: frequency=    6.03E+07
  ac: frequency=    4.37E+08
  ac: frequency=    3.02E+09
- sweep: ac ac0    end,  cpu clock=  3.43E-01 memory=    265 kb
+ sweep: ac ac0    end,  cpu clock=  3.43E-01 memory=    266 kb
 >info:         ***** hspice job concluded
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
  lic: Release hspice token(s)

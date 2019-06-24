@@ -6,7 +6,7 @@
     D:\synopsys\Hspice_A-2008.03\license.warn
   Use of this program is your acceptance to be bound by this 
   license agreement. HSPICE is the trademark of Synopsys, Inc.
-  Input File: c:\users\caspian\desktop\primary\transiant.sp                     
+  Input File: e:\term6\elec3\electronic3_project\transiant.sp                   
  Init: read install configuration file: D:\synopsys\Hspice_A-2008.03\meta.cfg
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
 
@@ -8921,26 +8921,26 @@
  * amplifier nestlist
 
 
- m1	3	vin-	2	dd	pch	w=23u	l=0.2u	m=1
- m2	4	vin+	2	dd	pch	w=23u	l=0.2u	m=1
+ m1	3	vin-	2	dd	pch	w=10.5u	l=0.2u	m=2
+ m2	4	vin+	2	dd	pch	w=10.5u	l=0.2u	m=2
 
- m3	3	3	ss	ss	nch	w=6u	l=0.2u	m=1
- m4	4	3	ss	ss	nch	w=6u	l=0.2u	m=1
+ m3	3	3	ss	ss	nch	w=2.675u	l=0.2u	m=2
+ m4	4	3	ss	ss	nch	w=2.675u	l=0.2u	m=2
 
- m5	vout	4	ss	ss	nch	w=36.18u	l=0.2u	m=1
- m6	vout	1	dd	dd	pch	w=144.75u	l=0.2u	m=1
+ m5	vout	4	ss	ss	nch	w=18.09u	l=0.2u	m=2
+ m6	vout	1	dd	dd	pch	w=72.36u	l=0.2u	m=2
 
- m7	2	1	dd	dd	pch	w=46u	l=0.2u	m=1
- m8	1	1	dd	dd	pch	w=1u	l=0.2u	m=1
+ m7	2	1	dd	dd	pch	w=21u	l=0.2u	m=2
+ m8	1	1	dd	dd	pch	w=0.5u	l=0.2u	m=2
 
- ib	1	ss	dc=12.50u
+ ib	1	ss	dc=15.50u
 
  vdd	dd	0	dc=1.2
  vss	ss	0	dc=0
 
  cc	vout	5	1p
  cl	vout	ss	1p
- rc	4	5	50
+ rc	4	5	30
 
  ***********************************************************
  ** transient simulation	
@@ -8956,17 +8956,17 @@
  vph1	ph1	0 	pulse(0		1.2	0	0.2n	0.2n	5.35n	12.5n)
  vph2	ph2	0 	pulse(0		1.2	6.25n	0.2n	0.2n	5.35n	12.5n)
 
- vpulse1	    input	0	pulse(0 	0.4	1n	0n	0n	6.5n	6.5n)
+ vpulse1	    input	0	pulse(0 	0.4	0	0n	0n	6.25n	12.5n)
  *vpulse2    input	0	pulse(1		0.7	0	0.1n	0.1n	5n	10n)
 
  vcmi	vin+	0	dc=0.3
  vdc	vout	v0	dc=0.3
 
  .option accurate=1
- .tran 0.02n 6.5n
+ .tran 0.02n 30n
  .probe
 
- **warning**  unknown analysis mode:  Üח>ְP .. line ignored
+ **warning**  unknown analysis mode:  לחְP .. line ignored
 
  .end
 
@@ -9010,10 +9010,6 @@
 
 
  *** warning *** pulse fall time is  < or = zero, reset to tstep
-
-
- **warning** pulse        0:vpulse1         
- period too small, reset to   6.5400000E-09
 
  
 Model Name: pch.5  
@@ -10129,7 +10125,7 @@ Model Name: nch.4
  
 
  
-Model Name: pch.15  
+Model Name: pch.20  
 
  BSIM4 Model (Level 54)
 
@@ -10162,16 +10158,16 @@ Model Name: pch.15
     CDSC =      0 
     CDSCB =      0 
     CDSCD =      0 
-    CIT = 0.002155 
-    NFACTOR = 0.1143 
+    CIT = -0.0002857 
+    NFACTOR = -1.191 
     XJ = 1.7e-007 
     VSAT = 1.2e+005 
     A0 =   3.62 
-    AGS =   8.03 
+    AGS =  5.742 
     A1 =      0 
     A2 =      1 
-    AT = 2.203e+005 
-    KETA = -0.2509 
+    AT = 2.83e+005 
+    KETA = -0.2576 
     NSUB = 6e+016 
     NDEP = 1.72e+017 
     NSD = 1e+020 
@@ -10182,10 +10178,10 @@ Model Name: pch.15
     VBM =     -3 
     XT = 1.55e-007 
     K1 = 0.1623 
-    KT1 = -0.2689 
+    KT1 = -0.2258 
     KT1L =      0 
     KT2 = -0.03875 
-    K2 = 0.03642 
+    K2 = 0.03015 
     K3 =  -0.58 
     K3B =    0.8 
     LPE0 = 2.805e-007 
@@ -10201,17 +10197,17 @@ Model Name: pch.15
     DVT2W =      0 
     DROUT =      0 
     DSUB =    0.5 
-    VTH0 = -0.1742 
+    VTH0 = -0.1873 
     EU =      1 
-    UA = -8.699e-010 
-    UA1 = 2.132e-009 
-    UB = 3.09e-018 
-    UB1 = -4.628e-018 
-    UC = 1.578e-010 
+    UA = -4.197e-010 
+    UA1 = 6.229e-010 
+    UB = 2.527e-018 
+    UB1 = -3.63e-018 
+    UC = 1.202e-010 
     UC1 = -6.421e-011 
-    U0 = 0.008807 
-    UTE = -1.297 
-    VOFF = -0.1095 
+    U0 = 0.008267 
+    UTE = -1.609 
+    VOFF = -0.1416 
     VOFFL =      0 
     MINV =      0 
     FPROUT =   1000 
@@ -10228,8 +10224,8 @@ Model Name: pch.15
     PRWG =      0 
     PRWB =      0 
     PRT =      0 
-    ETA0 = 0.1598 
-    ETAB = -0.004001 
+    ETA0 = 0.06098 
+    ETAB = -0.01537 
     PCLM = 0.6429 
     PDIBLC1 =      0 
     PDIBLC2 =  0.005 
@@ -10256,7 +10252,7 @@ Model Name: pch.15
     AIGC = 0.00606 
     BIGC = 0.0007625 
     CIGC = 1e-010 
-    AIGSD = 0.004621 
+    AIGSD = 0.004566 
     BIGSD =      0 
     CIGSD = 0.002267 
     AIGBACC = 0.01069 
@@ -10329,58 +10325,58 @@ Model Name: pch.15
     SL = 2e-006 
     SW = 2e-006 
     K =      0 
-    LCIT = 1.71e-010 
-    LNFACTOR = 7.714e-008 
-    LAT = -0.01054 
-    LAGS = -1.848e-007 
-    LKETA = 1.611e-008 
-    LKT1 = 4.621e-010 
-    LK2 = -2.011e-010 
-    LVTH0 = 1.994e-009 
-    LUA = 4.203e-017 
-    LUA1 = 5.576e-017 
-    LUB = -6.112e-026 
-    LUB1 = -3.65e-026 
-    LUC = -2.337e-018 
-    LU0 = -9.269e-011 
-    LUTE = 2.026e-008 
-    LVOFF = -8.701e-010 
-    LETA0 = -3.883e-009 
-    LETAB = -3.2e-009 
+    LCIT = 2.571e-010 
+    LNFACTOR = 2.064e-007 
+    LAT = -0.01381 
+    LAGS = 2.728e-007 
+    LKETA = 1.744e-008 
+    LKT1 = -8.17e-009 
+    LK2 = 8.66e-010 
+    LVTH0 = 4.038e-009 
+    LUA = -4.216e-017 
+    LUA1 = 1.188e-017 
+    LUB = -2.588e-026 
+    LUB1 = 1.305e-025 
+    LUC = 1.469e-018 
+    LU0 = -2.255e-010 
+    LUTE = 2.963e-008 
+    LVOFF = 2.359e-009 
+    LETA0 = 1.69e-009 
+    LETAB = -9.257e-010 
     LPCLM = -2.657e-008 
-    WCIT = -1.233e-009 
-    WAT = 0.02869 
-    WAGS = -2.175e-006 
-    WKT1 = 1.266e-008 
-    WK2 = -3.422e-009 
-    WVTH0 = -2.567e-009 
-    WUA = 2.043e-016 
-    WUA1 = -4.531e-016 
-    WUB = -3.998e-025 
-    WUB1 = 4.866e-025 
-    WUC = -3.527e-017 
-    WU0 = -2.77e-010 
-    WUTE = -3.219e-008 
-    WVOFF = -8.41e-009 
-    WETA0 = -5.365e-008 
-    WETAB = -5.742e-009 
-    WAIGSD = 3.959e-011 
-    PCIT = 4.35e-017 
-    PAT = -1.474e-009 
-    PAGS = 4.35e-013 
-    PKT1 = -2.532e-015 
-    PK2 = 4.002e-016 
-    PVTH0 = 3.306e-016 
-    PUA = -3.821e-023 
-    PUA1 = -2.245e-023 
-    PUB = 2.636e-032 
-    PUB1 = 5.107e-032 
-    PUC = 2.116e-024 
-    PU0 = -5.768e-017 
-    PUTE = -3.306e-015 
-    PVOFF = 4.437e-016 
-    PETA0 = 2.61e-015 
-    PETAB = 1.148e-015 
+    WNFACTOR = 6.594e-007 
+    WAT = -0.002993 
+    WAGS = -1.02e-006 
+    WKETA = 3.365e-009 
+    WKT1 = -9.137e-009 
+    WK2 = -2.583e-010 
+    WVTH0 = 4.079e-009 
+    WUA = -2.311e-017 
+    WUA1 = 3.088e-016 
+    WUB = -1.152e-025 
+    WUB1 = -1.7e-026 
+    WUC = -1.624e-017 
+    WU0 = -4.079e-012 
+    WUTE = 1.254e-007 
+    WVOFF = 7.791e-009 
+    WETA0 = -3.739e-009 
+    WAIGSD = 6.71e-011 
+    PNFACTOR = -6.526e-014 
+    PAT = 1.799e-010 
+    PAGS = 2.039e-013 
+    PKETA = -6.73e-016 
+    PKT1 = 1.827e-015 
+    PK2 = -1.387e-016 
+    PVTH0 = -7.016e-016 
+    PUA = 4.307e-024 
+    PUA1 = -2.855e-025 
+    PUB = 8.566e-033 
+    PUB1 = -3.324e-032 
+    PUC = 1.937e-025 
+    PU0 = 9.381e-018 
+    PUTE = -8.035e-015 
+    PVOFF = -1.187e-015 
+    PETA0 = -2.039e-016 
     TNOM =  298.1 
     CGSO = 2.568e-011 
     CGDO = 2.568e-011 
@@ -10437,8 +10433,8 @@ Model Name: pch.15
     WWN =      1 
     WWL =      0 
     WWLC =      0 
-    WMIN = 5.05e-007 
-    WMAX = 1.005e-006 
+    WMIN = 2.45e-007 
+    WMAX = 5.05e-007 
     NOIA = 1.635e+042 
     NOIB = 7.241e+026 
     NOIC =   8.75 
@@ -10530,14 +10526,6 @@ Model Name: pch.15
 
  
       
-
- **diagnostic** dc convergence failure, 
- resetting dcon option to 1 and retrying
-
- **diagnostic** dc convergence successful
- you can increase the efficiency of the
- operating point calculation by setting dcon= 1
- in the .option statement
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
  transiaent simulation of a nmos input single-ende diff pair                    
@@ -10546,11 +10534,11 @@ Model Name: pch.15
  ***** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:1       = 755.2269m 0:2       = 800.7536m 0:3       = 475.9242m
- +0:4       = 485.5288m 0:5       = 485.5288m 0:dd      =   1.2000 
- +0:im0     = 285.3573m 0:input   =   0.      0:ph1     =   0.     
- +0:ph2     =   0.      0:ss      =   0.      0:v0      = 270.7146m
- +0:vin+    = 300.0000m 0:vin-    = 300.9674m 0:vout    = 570.7146m
+ +0:1       = 726.4340m 0:2       = 826.1806m 0:3       = 510.1630m
+ +0:4       = 518.1161m 0:5       = 518.1161m 0:dd      =   1.2000 
+ +0:im0     = 284.5187m 0:input   =   0.      0:ph1     =   0.     
+ +0:ph2     =   0.      0:ss      =   0.      0:v0      = 269.0375m
+ +0:vin+    = 300.0000m 0:vin-    = 300.9261m 0:vout    = 569.0375m
 
 
           ***** job concluded
@@ -10560,7 +10548,7 @@ Model Name: pch.15
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        244 kbytes
+           total memory used        246 kbytes
 
   # nodes =      16 # elements=      23
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       8
@@ -10568,16 +10556,16 @@ Model Name: pch.15
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.01           1         222
-    transient          0.08         326         537         214 rev=        58
-    readin             0.31
-    errchk             0.02
-    setup              0.01
+    op point           0.02           1          10
+    transient          0.08        1501        1294         547 rev=       148
+    readin             0.19
+    errchk             0.03
+    setup              0.00
     output             0.00
-           total cpu time          0.47 seconds
+           total cpu time          0.33 seconds
            total elapsed time         1 seconds
-               job started at  17:16:12 06/22/2019
-               job ended   at  17:16:13 06/22/2019
+               job started at  05:09:48 06/24/2019
+               job ended   at  05:09:48 06/24/2019
 
 
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini

@@ -33,23 +33,32 @@ Rc	4	5	30
 CH	vin-	im0	1p
 
 *Ideal switches in Hspice
-g1	input	im0	vcr	pwl(1)	ph1	0	0.0v,10meg	1.2v,10
-g2	im0	vout	vcr	pwl(1)	ph2	0	0.0v,10meg	1.2v,10
-g3	vin-	v0	vcr	pwl(1) 	ph1	0	0.0v,10meg	1.2v,10
+M9	im0	vp1+	input	ss	nch	W=1u	L=0.2u	M=1
+M10	input	vp1-	im0	dd	pch	W=1u	L=0.1u	M=2
+M11	vout	vp2+	im0	ss	nch	W=1u	L=0.2u	M=1
+M12	im0	vp2-	vout	dd	pch	W=1u	L=0.1u	M=2
+M13	v0	vp1+	vin-	ss	nch	W=1u	L=0.2u	M=1
+M14	vin-	vp1-	v0	dd	pch	W=1u	L=0.1u	M=2
+*g1	input	im0	vcr	pwl(1)	ph1	0	0.0v,10meg	1.2v,10
+*g2	im0	vout	vcr	pwl(1)	ph2	0	0.0v,10meg	1.2v,10
+*g3	vin-	v0	vcr	pwl(1) 	ph1	0	0.0v,10meg	1.2v,10
 
 *clock	phases
 vph1	ph1	0 	pulse(0		1.2	0	0.2n	0.2n	5.35n	12.5n)
 vph2	ph2	0 	pulse(0		1.2	6.25n	0.2n	0.2n	5.35n	12.5n)
 
-vpulse1	    input	0	pulse(0 	0.4	0	0n	0n	25n	25n)
+vpulse1	    input	0	pulse(0 	0.4	0	0n	0n	6.25n	12.5n)
+vp1	vp1+	0	pulse(0	1.2	0	0.2n	0.2n	5.35n	12.5n)
+vp1B	vp1-	0	pulse(0	1.2	5.55n	0.2n	0.2n	6.75n	12.5n)
+vp2	vp2+	0	pulse(0	1.2	6.25n	0.2n	0.2n	5.35n	12.5n)
+vp2B	vp2-	0	pulse(0	1.2	11.8n	0.2n	0.2n	6.75n	12.5n)
 *vpulse2    input	0	pulse(1		0.7	0	0.1n	0.1n	5n	10n)
 
 vcmi	vin+	0	dc=0.3
 vdc	vout	v0	dc=0.3
 
 .option accurate=1
-.op
-.tran 0.02n 24n
+.tran 0.02n 36n
 .probe
 .end
 

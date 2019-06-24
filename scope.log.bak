@@ -1,0 +1,418 @@
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+wm geometry . 1536x781+20+20
+Mdi:FullSize
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+ScopeSigMgr:loadpffile E:/term6/elec3/Electronic3_project/transiant.tr0 1 openonly
+# PF:1
+pf:read PF:1 v(vout)
+# WF:1:1
+Graph addsignal WF:1:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:1 v(vin-)
+# WF:1:2
+Graph addsignal WF:1:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+pf:read PF:1 v(input)
+# WF:1:3
+Graph addsignal WF:1:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:1 v(ph1)
+# WF:1:4
+Graph addsignal WF:1:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:1 v(ph2)
+# WF:1:5
+Graph addsignal WF:1:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+wm geometry .sigmgr._PF:1 200x331+768+439
+wm geometry .sigmgr._PF:1 200x331+768+448
+wm geometry .sigmgr._PF:1 200x331+768+459
+wm geometry .sigmgr._PF:1 200x331+768+469
+wm geometry .sigmgr._PF:1 200x331+768+479
+wm geometry .sigmgr._PF:1 200x331+769+490
+wm geometry .sigmgr._PF:1 200x331+769+498
+wm geometry .sigmgr._PF:1 200x331+770+504
+wm geometry .sigmgr._PF:1 200x331+772+512
+wm geometry .sigmgr._PF:1 200x331+772+516
+wm geometry .sigmgr._PF:1 200x331+774+520
+wm geometry .sigmgr._PF:1 200x331+774+522
+wm geometry .sigmgr._PF:1 200x331+776+524
+wm geometry .sigmgr._PF:1 200x331+778+526
+wm geometry .sigmgr._PF:1 200x331+778+528
+wm geometry .sigmgr._PF:1 200x331+779+528
+wm geometry .sigmgr._PF:1 200x331+779+537
+wm geometry .sigmgr._PF:1 200x331+779+541
+wm geometry .sigmgr._PF:1 200x331+778+545
+wm geometry .sigmgr._PF:1 200x331+778+552
+wm geometry .sigmgr._PF:1 200x331+775+557
+wm geometry .sigmgr._PF:1 200x331+774+564
+wm geometry .sigmgr._PF:1 200x331+773+571
+wm geometry .sigmgr._PF:1 200x331+770+579
+wm geometry .sigmgr._PF:1 200x331+768+592
+wm geometry .sigmgr._PF:1 200x331+766+602
+wm geometry .sigmgr._PF:1 200x331+764+614
+wm geometry .sigmgr._PF:1 200x331+762+625
+wm geometry .sigmgr._PF:1 200x331+761+633
+wm geometry .sigmgr._PF:1 200x331+758+641
+wm geometry .sigmgr._PF:1 200x331+758+648
+wm geometry .sigmgr._PF:1 200x331+758+655
+wm geometry .sigmgr._PF:1 200x331+758+663
+wm geometry .sigmgr._PF:1 200x331+758+670
+wm geometry .sigmgr._PF:1 200x331+758+676
+wm geometry .sigmgr._PF:1 200x331+758+684
+wm geometry .sigmgr._PF:1 200x331+758+690
+wm geometry .sigmgr._PF:1 200x331+758+697
+wm geometry .sigmgr._PF:1 200x331+760+704
+wm geometry .sigmgr._PF:1 200x331+760+709
+wm geometry .sigmgr._PF:1 200x331+761+714
+wm geometry .sigmgr._PF:1 200x331+761+718
+wm geometry .sigmgr._PF:1 200x331+761+722
+wm geometry .sigmgr._PF:1 200x331+761+725
+wm geometry .sigmgr._PF:1 200x331+761+729
+wm geometry .sigmgr._PF:1 200x331+762+731
+wm geometry .sigmgr._PF:1 200x331+762+733
+wm geometry .sigmgr._PF:1 200x331+762+736
+wm geometry .sigmgr._PF:1 200x331+762+737
+wm geometry .sigmgr._PF:1 200x331+762+738
+wm geometry .sigmgr._PF:1 200x331+762+739
+wm geometry .sigmgr._PF:1 200x331+762+740
+wm geometry .sigmgr._PF:1 200x331+762+741
+wm geometry .sigmgr._PF:1 200x331+762+742
+wm geometry .sigmgr._PF:1 200x331+762+744
+wm geometry .sigmgr._PF:1 200x331+763+745
+wm geometry .sigmgr._PF:1 200x331+763+746
+wm geometry .sigmgr._PF:1 200x331+764+748
+wm geometry .sigmgr._PF:1 200x331+765+748
+wm geometry .sigmgr._PF:1 200x331+765+749
+wm geometry .sigmgr._PF:1 200x331+765+750
+wm geometry .sigmgr._PF:1 200x331+766+752
+wm geometry .sigmgr._PF:1 200x331+764+756
+wm geometry .sigmgr._PF:1 200x331+764+757
+wm geometry .sigmgr._PF:1 200x331+763+759
+wm geometry .sigmgr._PF:1 200x331+763+760
+wm geometry .sigmgr._PF:1 200x331+762+761
+wm geometry .sigmgr._PF:1 200x331+762+762
+wm geometry .sigmgr._PF:1 200x331+761+763
+wm geometry .sigmgr._PF:1 200x331+761+764
+wm geometry .sigmgr._PF:1 200x331+760+764
+wm geometry .sigmgr._PF:1 200x331+760+766
+wm geometry .sigmgr._PF:1 200x331+760+768
+wm geometry .sigmgr._PF:1 200x331+759+768
+wm geometry .sigmgr._PF:1 200x331+759+769
+wm geometry .sigmgr._PF:1 200x331+758+769
+wm geometry .sigmgr._PF:1 200x331+758+770
+wm geometry .sigmgr._PF:1 200x331+758+771
+wm geometry .sigmgr._PF:1 200x331+758+772
+wm geometry .sigmgr._PF:1 200x331+757+772
+wm geometry .sigmgr._PF:1 200x331+756+772
+wm geometry .sigmgr._PF:1 200x331+756+773
+wm geometry .sigmgr._PF:1 200x331+755+774
+wm geometry .sigmgr._PF:1 200x331+754+774
+wm geometry .sigmgr._PF:1 200x331+754+775
+wm geometry .sigmgr._PF:1 200x331+753+775
+wm geometry .sigmgr._PF:1 200x331+752+775
+wm geometry .sigmgr._PF:1 200x331+752+776
+wm geometry .sigmgr._PF:1 200x331+751+776
+wm geometry .sigmgr._PF:1 200x331+750+776
+wm geometry .sigmgr._PF:1 200x331+750+777
+wm geometry .sigmgr._PF:1 200x331+750+778
+wm geometry .sigmgr._PF:1 200x331+750+779
+wm geometry .sigmgr._PF:1 200x331+749+779
+wm geometry .sigmgr._PF:1 200x331+749+780
+wm geometry .sigmgr._PF:1 200x331+748+780
+wm geometry .sigmgr._PF:1 200x331+748+781
+wm geometry .sigmgr._PF:1 200x331+748+782
+wm geometry .sigmgr._PF:1 200x331+748+783
+wm geometry .sigmgr._PF:1 200x331+747+783
+wm geometry .sigmgr._PF:1 200x331+747+784
+wm geometry .sigmgr._PF:1 200x331+746+784
+wm geometry .sigmgr 367x200+1196+125
+wm geometry .sigmgr 367x200+1182+159
+wm geometry .sigmgr 367x200+1173+187
+wm geometry .sigmgr 367x200+1169+201
+wm geometry .sigmgr 367x200+1166+213
+wm geometry .sigmgr 367x200+1162+227
+wm geometry .sigmgr 367x200+1159+240
+wm geometry .sigmgr 367x200+1156+250
+wm geometry .sigmgr 367x200+1153+260
+wm geometry .sigmgr 367x200+1150+273
+wm geometry .sigmgr 367x200+1146+283
+wm geometry .sigmgr 367x200+1143+291
+wm geometry .sigmgr 367x200+1141+299
+wm geometry .sigmgr 367x200+1140+305
+wm geometry .sigmgr 367x200+1139+308
+wm geometry .sigmgr 367x200+1138+310
+wm geometry .sigmgr 367x200+1140+310
+wm geometry .sigmgr 367x200+1141+310
+wm geometry .sigmgr 367x200+1142+310
+wm geometry .sigmgr 367x200+1143+310
+wm geometry .sigmgr 367x200+1143+311
+wm geometry .sigmgr 367x200+1143+312
+wm geometry .sigmgr 367x200+1143+314
+wm geometry .sigmgr 367x200+1143+315
+wm geometry .sigmgr 367x200+1143+317
+wm geometry .sigmgr 367x200+1143+318
+wm geometry .sigmgr 367x200+1143+319
+wm geometry .sigmgr 367x200+1143+321
+wm geometry .sigmgr 367x200+1143+322
+wm geometry .sigmgr 367x200+1143+323
+wm geometry .sigmgr 367x200+1143+324
+wm geometry .sigmgr 367x200+1143+325
+wm geometry .sigmgr 367x200+1143+326
+wm geometry .sigmgr 367x200+1143+327
+wm geometry .sigmgr 367x200+1143+328
+wm geometry .sigmgr 367x200+1143+329
+wm geometry .sigmgr 367x200+1143+330
+wm geometry .sigmgr 367x200+1143+331
+wm geometry .sigmgr 367x200+1143+332
+wm geometry .sigmgr 367x200+1141+343
+wm geometry .sigmgr 367x200+1137+351
+wm geometry .sigmgr 367x200+1133+361
+wm geometry .sigmgr 367x200+1127+373
+wm geometry .sigmgr 367x200+1118+390
+wm geometry .sigmgr 367x200+1103+416
+wm geometry .sigmgr 367x200+1085+453
+wm geometry .sigmgr 367x200+1071+482
+wm geometry .sigmgr 367x200+1060+507
+wm geometry .sigmgr 367x200+1050+528
+wm geometry .sigmgr 367x200+1042+547
+wm geometry .sigmgr 367x200+1039+561
+wm geometry .sigmgr 367x200+1034+575
+wm geometry .sigmgr 367x200+1031+585
+wm geometry .sigmgr 367x200+1028+595
+wm geometry .sigmgr 367x200+1025+603
+wm geometry .sigmgr 367x200+1024+612
+wm geometry .sigmgr 367x200+1022+619
+wm geometry .sigmgr 367x200+1020+625
+wm geometry .sigmgr 367x200+1019+631
+wm geometry .sigmgr 367x200+1017+635
+wm geometry .sigmgr 367x200+1016+639
+wm geometry .sigmgr 367x200+1016+640
+wm geometry .sigmgr 367x200+1015+640
+wm geometry .sigmgr 367x200+1014+640
+wm geometry .sigmgr 367x200+1014+647
+wm geometry .sigmgr 367x200+1014+650
+wm geometry .sigmgr 367x200+1014+653
+wm geometry .sigmgr 367x200+1014+657
+wm geometry .sigmgr 367x200+1014+662
+wm geometry .sigmgr 367x200+1014+667
+wm geometry .sigmgr 367x200+1014+669
+wm geometry .sigmgr 367x200+1014+674
+wm geometry .sigmgr 367x200+1014+676
+wm geometry .sigmgr 367x200+1014+679
+wm geometry .sigmgr 367x200+1014+682
+wm geometry .sigmgr 367x200+1014+683
+wm geometry .sigmgr 367x200+1014+686
+wm geometry .sigmgr 367x200+1014+688
+wm geometry .sigmgr 367x200+1014+690
+wm geometry .sigmgr 367x200+1014+693
+wm geometry .sigmgr 367x200+1014+695
+wm geometry .sigmgr 367x200+1014+699
+wm geometry .sigmgr 367x200+1014+701
+wm geometry .sigmgr 367x200+1014+703
+wm geometry .sigmgr 367x200+1014+707
+wm geometry .sigmgr 367x200+1014+711
+wm geometry .sigmgr 367x200+1014+715
+wm geometry .sigmgr 367x200+1014+719
+wm geometry .sigmgr 367x200+1014+723
+wm geometry .sigmgr 367x200+1014+727
+wm geometry .sigmgr 367x200+1014+730
+wm geometry .sigmgr 367x200+1014+732
+wm geometry .sigmgr 367x200+1013+735
+wm geometry .sigmgr 367x200+1013+738
+wm geometry .sigmgr 367x200+1013+739
+wm geometry .sigmgr 367x200+1013+742
+wm geometry .sigmgr 367x200+1013+744
+wm geometry .sigmgr 367x200+1013+747
+wm geometry .sigmgr 367x200+1013+749
+wm geometry .sigmgr 367x200+1013+752
+wm geometry .sigmgr 367x200+1013+754
+wm geometry .sigmgr 367x200+1013+757
+wm geometry .sigmgr 367x200+1013+759
+wm geometry .sigmgr 367x200+1012+760
+wm geometry .sigmgr 367x200+1012+762
+wm geometry .sigmgr 367x200+1012+763
+wm geometry .sigmgr 367x200+1012+764
+wm geometry .sigmgr 367x200+1012+765
+wm geometry .sigmgr 367x200+1012+766
+wm geometry .sigmgr 367x200+1011+767
+wm geometry .sigmgr 367x200+1011+768
+wm geometry .sigmgr 367x200+1010+770
+wm geometry .sigmgr 367x200+1010+771
+wm geometry .sigmgr 367x200+1009+772
+wm geometry .sigmgr 367x200+1009+774
+wm geometry .sigmgr 367x200+1009+775
+wm geometry .sigmgr 367x200+1008+775
+wm geometry .sigmgr 367x200+1008+776
+wm geometry .sigmgr 367x200+1007+776
+wm geometry .sigmgr 367x200+1007+777
+wm geometry .sigmgr 367x200+1007+778
+wm geometry .sigmgr 367x200+1006+778
+wm geometry .sigmgr 367x200+1006+779
+wm geometry .sigmgr 367x200+1005+779
+wm geometry .sigmgr 367x200+1005+780
+wm geometry .sigmgr 367x200+1004+780
+wm geometry .sigmgr 367x200+1003+780
+wm geometry .sigmgr 367x200+1002+780
+wm geometry .sigmgr 367x200+1001+780
+wm geometry .sigmgr 367x200+1000+780
+wm geometry .sigmgr 367x200+998+780
+wm geometry .sigmgr 367x200+997+780
+wm geometry .sigmgr 367x200+994+780
+wm geometry .sigmgr 367x200+993+781
+wm geometry .sigmgr 367x200+991+781
+wm geometry .sigmgr 367x200+990+781
+wm geometry .sigmgr 367x200+989+781
+wm geometry .sigmgr 367x200+988+781
+wm geometry .sigmgr 367x200+987+781
+wm geometry .sigmgr 367x200+986+781
+wm geometry .sigmgr 367x200+986+782
+wm geometry .sigmgr 367x200+985+782
+wm geometry .sigmgr 367x200+984+783
+wm geometry .sigmgr 367x200+983+783
+wm geometry .sigmgr 367x200+982+783
+wm geometry .sigmgr 367x200+981+783
+wm geometry .sigmgr 367x200+980+783
+Graph:Select Graph0
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+GrMeas:AtX Graph0 Signal0 {} xyrangeVisible
+# M:0
+Graph:DSel
+GrMeas:Select Graph0 M:0 0 1
+GrMeas:MovePoint Graph0 M:0 0 12.693999575087n 0.40433994608587
+Graph:DSel
+GrMeas:Select Graph0 M:0 0 2
+GrMeas:MoveText Graph0 M:0 0 -62 -17
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+GrMeas:AtX Graph0 Signal0 {} xyrangeVisible
+# M:1
+Graph:DSel
+GrMeas:Select Graph0 M:1 0 1
+GrMeas:MoveText Graph0 M:1 0 2 33
+GrMeas:MovePoint Graph0 M:1 0 14.637181206502n 0.60191028497251
+Graph:DSel
+Mdi:ArrangeIcons
+Graph:SetCMap mono
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons
+Graph sigconfig Signal4 -region 4 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 2
+Graph sigconfig Signal4 -region 4 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 3
+Graph sigconfig Signal4 -region 4 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 4
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph sigconfig Signal3 -region 3 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 2
+Graph sigconfig Signal3 -region 3 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 3
+Graph sigconfig Signal3 -region 3 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 4
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph sigconfig Signal2 -region 2 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 2
+Graph sigconfig Signal2 -region 2 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 3
+Graph sigconfig Signal2 -region 2 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 4
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph sigconfig Signal1 -region 1 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 2
+Graph sigconfig Signal1 -region 1 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 3
+Graph sigconfig Signal1 -region 1 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 4
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph sigconfig Signal0 -region 0 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 2
+Graph sigconfig Signal0 -region 0 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 3
+Graph sigconfig Signal0 -region 0 -xview real(x) -yview real(y) -fill black -linestyle - -symbol {} -bar {} -stipple {} -symwidth 10 -bus none -tracehi 2 -barwidth 0 -width 4
+Graph icursor draw0_text @654.0,204.0
+Graph itemcreate text 654.0 204.0 -tags draw0_text -font {-family {OF Helvetica} -size 12} -fill pink -justify left -anchor nw -width 0 -box 0 -bg {}
+# GrDraw0_text
+Graph insert GrDraw0_text insert {}
+Graph insert GrDraw0_text insert D
+Graph insert GrDraw0_text insert o
+Graph insert GrDraw0_text insert n
+Graph insert GrDraw0_text insert e
+Graph insert GrDraw0_text insert { }
+Graph insert GrDraw0_text insert b
+Graph insert GrDraw0_text insert y
+Graph insert GrDraw0_text insert { }
+Graph insert GrDraw0_text insert 9
+Graph insert GrDraw0_text insert 5
+Graph insert GrDraw0_text insert 2
+Graph insert GrDraw0_text insert 3
+Graph insert GrDraw0_text insert 0
+Graph insert GrDraw0_text insert 3
+Graph insert GrDraw0_text insert 1
+Graph insert GrDraw0_text insert -
+Graph insert GrDraw0_text insert 9
+Graph insert GrDraw0_text insert 5
+Graph insert GrDraw0_text insert 2
+Graph insert GrDraw0_text insert 3
+Graph insert GrDraw0_text insert 0
+Graph insert GrDraw0_text insert 5
+Graph insert GrDraw0_text insert 3
+Mdi:ArrangeIcons
+Graph:DSel 0
+Graph addtag selSet withtag GrDraw0_text
+Graph itemconfig GrDraw0_text -anchor
+Graph itemconfig GrDraw0_text -bg
+Graph itemconfig GrDraw0_text -font
+Graph itemconfig GrDraw0_text -justify
+Graph itemconfig GrDraw0_text -stipple
+Graph itemconfig GrDraw0_text -width
+Graph itemconfig GrDraw0_text -box
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 12 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 12 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -fill #000000
+Mdi:ArrangeIcons
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 13 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 13 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 14 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 14 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 15 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 15 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 16 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 16 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 17 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 17 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 18 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 18 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 17 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 17 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 16 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 16 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 15 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 15 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 14 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 14 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 15 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph itemconfig GrDraw0_text -font {-family {OF Helvetica} -size 15 -weight normal -slant roman -underline 0 -overstrike 0 -type outline}
+Graph:Select Graph0
+Graph move selSet 0 1
+Graph move selSet -1 0
+Graph move selSet 0 1
+Graph move selSet -1 0
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Graph move selSet 0 1
+Mdi:ArrangeIcons
+Mdi:ArrangeIcons

@@ -6,7 +6,7 @@
     D:\synopsys\Hspice_A-2008.03\license.warn
   Use of this program is your acceptance to be bound by this 
   license agreement. HSPICE is the trademark of Synopsys, Inc.
-  Input File: c:\users\caspian\desktop\primary\miller.sp                        
+  Input File: e:\term6\elec3\electronic3_project\miller.sp                      
  Init: read install configuration file: D:\synopsys\Hspice_A-2008.03\meta.cfg
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
 
@@ -8920,26 +8920,27 @@
 
  * amplifier nestlist
 
- m1	3	vin-	2	dd	pch	w=23u	l=0.2u	m=1
- m2	4	vin+	2	dd	pch	w=23u	l=0.2u	m=1
+ m1	3	vin-	2	dd	pch	w=10.5u	l=0.2u	m=2
+ m2	4	vin+	2	dd	pch	w=10.5u	l=0.2u	m=2
 
- m3	3	3	ss	ss	nch	w=6u	l=0.2u	m=1
- m4	4	3	ss	ss	nch	w=6u	l=0.2u	m=1
+ m3	3	3	ss	ss	nch	w=2.675u	l=0.2u	m=2
+ m4	4	3	ss	ss	nch	w=2.675u	l=0.2u	m=2
 
- m5	vout	4	ss	ss	nch	w=36.18u	l=0.2u	m=1
- m6	vout	1	dd	dd	pch	w=144.75u	l=0.2u	m=1
+ m5	vout	4	ss	ss	nch	w=18.09u	l=0.2u	m=2
+ m6	vout	1	dd	dd	pch	w=72.36u	l=0.2u	m=2
 
- m7	2	1	dd	dd	pch	w=46u	l=0.2u	m=1
- m8	1	1	dd	dd	pch	w=1u	l=0.2u	m=1
+ m7	2	1	dd	dd	pch	w=21u	l=0.2u	m=2
+ m8	1	1	dd	dd	pch	w=0.5u	l=0.2u	m=2
 
- ib	1	ss	dc=12.50u
+ ib	1	ss	dc=15.50u
 
  vdd	dd	0	dc=1.2
  vss	ss	0	dc=0
 
  cc	vout	5	1p
  cl	vout	ss	1p
- rc	4	5	50
+ rc	4	5	30
+
 
  ***********************************************************
  ** ac simulation
@@ -8958,7 +8959,7 @@
  .measure   ac  phase_margin   find  vp(ss, vout) when vdb(vout, ss)=0
  .probe
 
- **warning**  unknown analysis mode:  ÜçKÀP .. line ignored
+ **warning**  unknown analysis mode:  ìç‰ÀP .. line ignored
 
  
 Model Name: pch.5  
@@ -10074,7 +10075,7 @@ Model Name: nch.4
  
 
  
-Model Name: pch.15  
+Model Name: pch.20  
 
  BSIM4 Model (Level 54)
 
@@ -10107,16 +10108,16 @@ Model Name: pch.15
     CDSC =      0 
     CDSCB =      0 
     CDSCD =      0 
-    CIT = 0.002155 
-    NFACTOR = 0.1143 
+    CIT = -0.0002857 
+    NFACTOR = -1.191 
     XJ = 1.7e-007 
     VSAT = 1.2e+005 
     A0 =   3.62 
-    AGS =   8.03 
+    AGS =  5.742 
     A1 =      0 
     A2 =      1 
-    AT = 2.203e+005 
-    KETA = -0.2509 
+    AT = 2.83e+005 
+    KETA = -0.2576 
     NSUB = 6e+016 
     NDEP = 1.72e+017 
     NSD = 1e+020 
@@ -10127,10 +10128,10 @@ Model Name: pch.15
     VBM =     -3 
     XT = 1.55e-007 
     K1 = 0.1623 
-    KT1 = -0.2689 
+    KT1 = -0.2258 
     KT1L =      0 
     KT2 = -0.03875 
-    K2 = 0.03642 
+    K2 = 0.03015 
     K3 =  -0.58 
     K3B =    0.8 
     LPE0 = 2.805e-007 
@@ -10146,17 +10147,17 @@ Model Name: pch.15
     DVT2W =      0 
     DROUT =      0 
     DSUB =    0.5 
-    VTH0 = -0.1742 
+    VTH0 = -0.1873 
     EU =      1 
-    UA = -8.699e-010 
-    UA1 = 2.132e-009 
-    UB = 3.09e-018 
-    UB1 = -4.628e-018 
-    UC = 1.578e-010 
+    UA = -4.197e-010 
+    UA1 = 6.229e-010 
+    UB = 2.527e-018 
+    UB1 = -3.63e-018 
+    UC = 1.202e-010 
     UC1 = -6.421e-011 
-    U0 = 0.008807 
-    UTE = -1.297 
-    VOFF = -0.1095 
+    U0 = 0.008267 
+    UTE = -1.609 
+    VOFF = -0.1416 
     VOFFL =      0 
     MINV =      0 
     FPROUT =   1000 
@@ -10173,8 +10174,8 @@ Model Name: pch.15
     PRWG =      0 
     PRWB =      0 
     PRT =      0 
-    ETA0 = 0.1598 
-    ETAB = -0.004001 
+    ETA0 = 0.06098 
+    ETAB = -0.01537 
     PCLM = 0.6429 
     PDIBLC1 =      0 
     PDIBLC2 =  0.005 
@@ -10201,7 +10202,7 @@ Model Name: pch.15
     AIGC = 0.00606 
     BIGC = 0.0007625 
     CIGC = 1e-010 
-    AIGSD = 0.004621 
+    AIGSD = 0.004566 
     BIGSD =      0 
     CIGSD = 0.002267 
     AIGBACC = 0.01069 
@@ -10274,58 +10275,58 @@ Model Name: pch.15
     SL = 2e-006 
     SW = 2e-006 
     K =      0 
-    LCIT = 1.71e-010 
-    LNFACTOR = 7.714e-008 
-    LAT = -0.01054 
-    LAGS = -1.848e-007 
-    LKETA = 1.611e-008 
-    LKT1 = 4.621e-010 
-    LK2 = -2.011e-010 
-    LVTH0 = 1.994e-009 
-    LUA = 4.203e-017 
-    LUA1 = 5.576e-017 
-    LUB = -6.112e-026 
-    LUB1 = -3.65e-026 
-    LUC = -2.337e-018 
-    LU0 = -9.269e-011 
-    LUTE = 2.026e-008 
-    LVOFF = -8.701e-010 
-    LETA0 = -3.883e-009 
-    LETAB = -3.2e-009 
+    LCIT = 2.571e-010 
+    LNFACTOR = 2.064e-007 
+    LAT = -0.01381 
+    LAGS = 2.728e-007 
+    LKETA = 1.744e-008 
+    LKT1 = -8.17e-009 
+    LK2 = 8.66e-010 
+    LVTH0 = 4.038e-009 
+    LUA = -4.216e-017 
+    LUA1 = 1.188e-017 
+    LUB = -2.588e-026 
+    LUB1 = 1.305e-025 
+    LUC = 1.469e-018 
+    LU0 = -2.255e-010 
+    LUTE = 2.963e-008 
+    LVOFF = 2.359e-009 
+    LETA0 = 1.69e-009 
+    LETAB = -9.257e-010 
     LPCLM = -2.657e-008 
-    WCIT = -1.233e-009 
-    WAT = 0.02869 
-    WAGS = -2.175e-006 
-    WKT1 = 1.266e-008 
-    WK2 = -3.422e-009 
-    WVTH0 = -2.567e-009 
-    WUA = 2.043e-016 
-    WUA1 = -4.531e-016 
-    WUB = -3.998e-025 
-    WUB1 = 4.866e-025 
-    WUC = -3.527e-017 
-    WU0 = -2.77e-010 
-    WUTE = -3.219e-008 
-    WVOFF = -8.41e-009 
-    WETA0 = -5.365e-008 
-    WETAB = -5.742e-009 
-    WAIGSD = 3.959e-011 
-    PCIT = 4.35e-017 
-    PAT = -1.474e-009 
-    PAGS = 4.35e-013 
-    PKT1 = -2.532e-015 
-    PK2 = 4.002e-016 
-    PVTH0 = 3.306e-016 
-    PUA = -3.821e-023 
-    PUA1 = -2.245e-023 
-    PUB = 2.636e-032 
-    PUB1 = 5.107e-032 
-    PUC = 2.116e-024 
-    PU0 = -5.768e-017 
-    PUTE = -3.306e-015 
-    PVOFF = 4.437e-016 
-    PETA0 = 2.61e-015 
-    PETAB = 1.148e-015 
+    WNFACTOR = 6.594e-007 
+    WAT = -0.002993 
+    WAGS = -1.02e-006 
+    WKETA = 3.365e-009 
+    WKT1 = -9.137e-009 
+    WK2 = -2.583e-010 
+    WVTH0 = 4.079e-009 
+    WUA = -2.311e-017 
+    WUA1 = 3.088e-016 
+    WUB = -1.152e-025 
+    WUB1 = -1.7e-026 
+    WUC = -1.624e-017 
+    WU0 = -4.079e-012 
+    WUTE = 1.254e-007 
+    WVOFF = 7.791e-009 
+    WETA0 = -3.739e-009 
+    WAIGSD = 6.71e-011 
+    PNFACTOR = -6.526e-014 
+    PAT = 1.799e-010 
+    PAGS = 2.039e-013 
+    PKETA = -6.73e-016 
+    PKT1 = 1.827e-015 
+    PK2 = -1.387e-016 
+    PVTH0 = -7.016e-016 
+    PUA = 4.307e-024 
+    PUA1 = -2.855e-025 
+    PUB = 8.566e-033 
+    PUB1 = -3.324e-032 
+    PUC = 1.937e-025 
+    PU0 = 9.381e-018 
+    PUTE = -8.035e-015 
+    PVOFF = -1.187e-015 
+    PETA0 = -2.039e-016 
     TNOM =  298.1 
     CGSO = 2.568e-011 
     CGDO = 2.568e-011 
@@ -10382,8 +10383,8 @@ Model Name: pch.15
     WWN =      1 
     WWL =      0 
     WWLC =      0 
-    WMIN = 5.05e-007 
-    WMAX = 1.005e-006 
+    WMIN = 2.45e-007 
+    WMAX = 5.05e-007 
     NOIA = 1.635e+042 
     NOIB = 7.241e+026 
     NOIC =   8.75 
@@ -10483,10 +10484,10 @@ Model Name: pch.15
  ***** operating point status is all       simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:1       = 755.2362m 0:2       = 800.1459m 0:3       = 476.1662m
- +0:4       = 476.1551m 0:5       = 476.1551m 0:dd      =   1.2000 
+ +0:1       = 726.4399m 0:2       = 825.5928m 0:3       = 510.3801m
+ +0:4       = 510.3663m 0:5       = 510.3663m 0:dd      =   1.2000 
  +0:im0     = 300.0000m 0:ss      =   0.      0:vin+    = 300.0000m
- +0:vin-    = 300.0000m 0:vout    = 696.0034m
+ +0:vin-    = 300.0000m 0:vout    = 661.6156m
 
 
  ****  voltage sources
@@ -10494,10 +10495,10 @@ Model Name: pch.15
  subckt                                                         
  element  0:vdd      0:vss      0:vinac    0:vindc1   0:vindc2  
   volts      1.2000     0.         0.       300.0000m  300.0000m
-  current   -2.7424m    2.7424m    3.0331n    3.0331n    3.0331n
-  power      3.2909m    0.         0.      -909.9175p -909.9249p
+  current   -3.4559m    3.4559m    3.1964n    3.1964n    3.1965n
+  power      4.1471m    0.         0.      -958.9320p -958.9424p
 
-     total voltage source power dissipation=    3.2909m       watts
+     total voltage source power dissipation=    4.1471m       watts
 
 
 
@@ -10505,18 +10506,18 @@ Model Name: pch.15
 
  subckt             
  element  0:ib      
-  volts    755.2362m
-  current   12.5000u
-  power     -9.4405u
+  volts    726.4399m
+  current   15.5000u
+  power    -11.2598u
 
 
-     total current source power dissipation=  -9.4405u       watts
+     total current source power dissipation= -11.2598u       watts
 
  **** resistors
 
  subckt             
  element  0:rc      
-  r value   50.0000 
+  r value   30.0000 
   v drop     0.     
   current    0.     
   power      0.     
@@ -10530,53 +10531,53 @@ Model Name: pch.15
  element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
  model    0:pch.5    0:pch.5    0:nch.8    0:nch.8    0:nch.4    0:pch.5   
  region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
-  id      -320.2772u -320.2789u  320.2749u  320.2734u    2.0894m   -2.0894m
-  ibs      399.9325f  399.9325f    0.         0.         0.         0.     
-  ibd      723.9121f  723.9233f -476.2232f -476.2121f -696.3458f  504.4889f
-  vgs     -500.1459m -500.1459m  476.1662m  476.1662m  476.1551m -444.7638m
-  vds     -323.9796m -323.9908m  476.1662m  476.1551m  696.0034m -503.9966m
-  vbs      399.8541m  399.8541m    0.         0.         0.         0.     
-  vth     -320.7709m -320.7708m  311.0150m  311.0151m  308.6634m -265.5367m
-  vdsat   -192.3575m -192.3576m  150.8601m  150.8600m  151.9507m -179.6964m
-  vod     -179.3750m -179.3750m  165.1513m  165.1511m  167.4916m -179.2271m
-  beta      19.9173m   19.9173m   23.1846m   23.1846m  141.1887m  128.3313m
-  gam eff  162.3000m  162.3000m  323.3065m  323.3065m  323.1000m  162.3000m
-  gm         2.8869m    2.8869m    2.7322m    2.7322m   17.4937m   19.0432m
-  gds      152.4555u  152.4490u  136.0812u  136.0840u  582.6864u  677.8823u
-  gmb      353.4310u  353.4330u  440.1546u  440.1530u    2.8215m    2.6443m
-  cdtot     18.2407f   18.2406f    4.8312f    4.8312f   27.3536f  115.7210f
-  cgtot     47.0967f   47.0967f   13.5326f   13.5326f   81.0920f  298.4637f
-  cstot     47.5209f   47.5209f   14.4238f   14.4238f   86.7025f  322.6022f
-  cbtot     23.4038f   23.4037f    8.1775f    8.1775f   47.9686f  174.9676f
-  cgs       40.7574f   40.7574f   11.3334f   11.3334f   68.1486f  262.6941f
-  cgd        7.8627f    7.8626f    1.7862f    1.7862f   10.4757f   45.4719f
+  id      -370.5511u -370.5538u  370.5485u  370.5466u    2.6993m   -2.6993m
+  ibs      748.8862f  748.8862f    0.         0.         0.         0.     
+  ibd        1.3793p    1.3793p   -1.0208p   -1.0208p   -1.3236p    1.0773p
+  vgs     -525.5928m -525.5928m  510.3801m  510.3801m  510.3663m -473.5601m
+  vds     -315.2126m -315.2265m  510.3801m  510.3663m  661.6156m -538.3844m
+  vbs      374.4072m  374.4072m    0.         0.         0.         0.     
+  vth     -317.4853m -317.4852m  310.5394m  310.5396m  308.8762m -265.3554m
+  vdsat   -215.0900m -215.0900m  171.6134m  171.6133m  171.4649m -202.1914m
+  vod     -208.1075m -208.1076m  199.8407m  199.8405m  201.4900m -208.2047m
+  beta      18.0488m   18.0488m   19.9220m   19.9220m  139.7052m  127.3436m
+  gam eff  162.3000m  162.3000m  323.9481m  323.9481m  323.1000m  162.3000m
+  gm         2.9027m    2.9027m    2.6931m    2.6931m   19.2327m   21.5209m
+  gds      196.1475u  196.1329u  137.8099u  137.8134u  742.2184u  817.6032u
+  gmb      357.0860u  357.0893u  428.5655u  428.5639u    3.0896m    2.9830m
+  cdtot     16.9136f   16.9135f    4.3048f    4.3049f   27.6930f  114.5789f
+  cgtot     43.9383f   43.9383f   12.2576f   12.2576f   82.3319f  303.8982f
+  cstot     44.3858f   44.3858f   13.0669f   13.0669f   87.8510f  328.0681f
+  cbtot     21.6373f   21.6373f    7.2973f    7.2973f   48.0578f  173.4222f
+  cgs       38.2600f   38.2600f   10.3251f   10.3251f   69.5498f  269.6378f
+  cgd        7.2345f    7.2344f    1.5991f    1.5991f   10.5844f   45.2948f
 
 
 
  subckt                        
  element  0:m7       0:m8      
- model    0:pch.5    0:pch.15  
+ model    0:pch.5    0:pch.20  
  region     Saturati   Saturati
-  id      -640.5614u  -12.4824u
+  id      -741.1105u  -15.4798u
   ibs        0.         0.     
-  ibd      400.0107f  444.7674f
-  vgs     -444.7638m -444.7638m
-  vds     -399.8541m -444.7638m
+  ibd      748.9576f  947.1240f
+  vgs     -473.5601m -473.5601m
+  vds     -374.4072m -473.5601m
   vbs        0.         0.     
-  vth     -266.0430m -256.2850m
-  vdsat   -179.2913m -186.0715m
-  vod     -178.7209m -188.4788m
-  beta      40.7742m  732.2424u
+  vth     -266.1401m -256.1708m
+  vdsat   -201.5570m -212.1262m
+  vod     -207.4200m -217.3893m
+  beta      36.9452m  686.7033u
   gam eff  162.3000m  162.3000m
-  gm         5.8576m  113.7279u
-  gds      240.3853u    3.8613u
-  gmb      813.8376u   15.4924u
-  cdtot     38.6630f  852.9361a
-  cgtot     95.5511f    2.1003f
-  cstot    102.5047f    2.2781f
-  cbtot     56.7131f    1.2771f
-  cgs       83.4556f    1.8401f
-  cgd       15.1809f  328.4669a
+  gm         5.9235m  121.8438u
+  gds      295.7952u    4.1866u
+  gmb      821.9828u   16.0746u
+  cdtot     35.9263f  876.8271a
+  cgtot     89.1422f    2.1643f
+  cstot     95.2260f    2.3610f
+  cbtot     51.9464f    1.3237f
+  cgs       78.2348f    1.9060f
+  cgd       14.1152f  333.6054a
 
 
 
@@ -10584,9 +10585,9 @@ Model Name: pch.15
  ac simulation of an nmos input single-ended diff pair                          
   ******  ac analysis                      tnom=  25.000 temp=  25.000          
  ******  
-   gain=  4.2647E+01
-   unity_gain=  3.4652E+08
-   phase_margin=  7.8832E+01
+   gain=  4.0395E+01
+   unity_gain=  3.4274E+08
+   phase_margin=  7.8215E+01
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
@@ -10595,7 +10596,7 @@ Model Name: pch.15
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        246 kbytes
+           total memory used        248 kbytes
 
   # nodes =      12 # elements=      17
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       8
@@ -10603,16 +10604,16 @@ Model Name: pch.15
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.01           1           8
-    ac analysis        0.13         425         425
-    readin             0.46
-    errchk             0.02
-    setup              0.01
+    op point           0.00           1           9
+    ac analysis        0.08         425         425
+    readin             0.19
+    errchk             0.03
+    setup              0.00
     output             0.00
-           total cpu time          0.65 seconds
+           total cpu time          0.33 seconds
            total elapsed time         1 seconds
-               job started at  17:52:33 06/22/2019
-               job ended   at  17:52:34 06/22/2019
+               job started at  04:43:01 06/24/2019
+               job ended   at  04:43:01 06/24/2019
 
 
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini

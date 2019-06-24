@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "04:43:01 06/24/2019 "
-* "netlist" "e:\term6\elec3\electronic3_project\miller.sp "
+* "rundate" "04:47:20 06/24/2019 "
+* "netlist" "e:\term6\elec3\electronic3_project\cmrr.sp "
 * "runtitle" "ac simulation of an nmos input single-ended diff pair"
 * time =    0.            
 * temperature =   25.0000        
@@ -17,6 +17,7 @@
 + 5 = 510.3663m       
 + dd =   1.2000        
 + im0 = 300.0000m       
++ im1 = 300.0000m       
 + ss =   0.            
 + vin+ = 300.0000m       
 + vin- = 300.0000m       

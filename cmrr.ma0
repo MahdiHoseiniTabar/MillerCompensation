@@ -2,5 +2,5 @@ $DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
 .TITLE 'ac simulation of an nmos input single-ended diff pair'
  gain             unity_gain       phase_margin     temper            
  alter#            
-   40.3948         3.427e+08         78.2145          25.0000         
+   -5.7171           failed           failed          25.0000         
     1.0000         

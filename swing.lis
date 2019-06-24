@@ -6,7 +6,7 @@
     D:\synopsys\Hspice_A-2008.03\license.warn
   Use of this program is your acceptance to be bound by this 
   license agreement. HSPICE is the trademark of Synopsys, Inc.
-  Input File: e:\term6\elec3\electronic3_project\cmrr.sp                        
+  Input File: e:\term6\elec3\electronic3_project\swing.sp                       
  Init: read install configuration file: D:\synopsys\Hspice_A-2008.03\meta.cfg
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini
 
@@ -8920,6 +8920,7 @@
 
  * amplifier nestlist
 
+
  m1	3	vin-	2	dd	pch	w=10.5u	l=0.2u	m=2
  m2	4	vin+	2	dd	pch	w=10.5u	l=0.2u	m=2
 
@@ -8941,29 +8942,46 @@
  cl	vout	ss	1p
  rc	4	5	30
 
-
  ***********************************************************
- ** cm simulation
+ ** transient simulation	
 
- vinac1	vin+	im0	ac=1
- vinac2	vin-	im1	ac=1
+ vpulse1	    vin+	0	sin(0 	58m	1x	0n	0	0)
+ v0	vin-	0 dc=0	
 
- vindc1    im0       ss      dc=0.3
- vindc2    im1      ss      dc=0.3
-
- .ac   dec  50  10    3g
- .option  acout=0
- .probe   vdb(vout, ss)
- .probe   vp(vout, ss)
-
- .measure   ac  gain           find  vdb(vout, ss) at=15
- .measure   ac  unity_gain     when  vdb(vout, ss)=0
- .measure   ac  phase_margin   find  vp(ss, vout) when vdb(vout, ss)=0
+ .option accurate=1
+ .tran 0.02u 2u
  .probe
 
- **warning**  unknown analysis mode:  לח~ְP .. line ignored
+ **warning**  unknown analysis mode:  לחְP .. line ignored
 
- .end
+
+ ***********************************************************************
+ ** runlvl is invoked, you can disable it by:
+      a) Add option runlvl=0 to your current simulation job.
+      b) Copy $installdir/hspice.ini to your HOME directory and
+         customize it by adding option runlvl=0, which disables
+         it for all of your simulation jobs.
+      c) Re-invoke $installdir/bin/config program and unselect the
+         option runlvl setting in box 'hspice.ini' which disables
+         it for whole group simulation jobs.
+
+ ** runlvl is invoked, some options are ignored or automatically set:
+      Options below are automatically set(user setting will overwrite them):
+      if runlvl=6,            .option bypass=0
+      if runlvl=[1|2|3|4|5],  .option bypass=2
+
+      Options below are ignored, they are replaced by automated algorithms:
+        lvltim    dvdt      ft    fast   trtol  absvar  relvar
+          relq  chgtol    dvtr    imin    itl3    rmax
+
+ ** runlvl is invoked, actual option value used by HSPICE are:
+       runlvl= 5       bypass= 2      mbypass=   2.00   bytol= 100.00u
+ ***********************************************************************
+
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:vpulse1             new dc=  0.0000D+00
+
  
 Model Name: pch.5  
 
@@ -10481,142 +10499,43 @@ Model Name: pch.20
       
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- ac simulation of an nmos input single-ended diff pair                          
+ transiaent simulation of a nmos input single-ende diff pair                    
   ******  operating point information      tnom=  25.000 temp=  25.000          
  ******  
- ***** operating point status is all       simulation time is     0.     
+ ***** operating point status is voltage   simulation time is     0.     
     node    =voltage      node    =voltage      node    =voltage
 
- +0:1       = 726.4399m 0:2       = 825.5928m 0:3       = 510.3801m
- +0:4       = 510.3663m 0:5       = 510.3663m 0:dd      =   1.2000 
- +0:im0     = 300.0000m 0:im1     = 300.0000m 0:ss      =   0.     
- +0:vin+    = 300.0000m 0:vin-    = 300.0000m 0:vout    = 661.6156m
+ +0:1       = 726.4316m 0:2       = 637.8432m 0:3       = 518.7952m
+ +0:4       = 518.7933m 0:5       = 518.7933m 0:dd      =   1.2000 
+ +0:ss      =   0.      0:vin+    =   0.      0:vin-    =   0.     
+ +0:vout    = 561.3136m
 
-
- ****  voltage sources
-
- subckt                                                                    
- element  0:vdd      0:vss      0:vinac1   0:vinac2   0:vindc1   0:vindc2  
-  volts      1.2000     0.         0.         0.       300.0000m  300.0000m
-  current   -3.4559m    3.4559m    3.1964n    3.1965n    3.1964n    3.1965n
-  power      4.1471m    0.         0.         0.      -958.9320p -958.9424p
-
-     total voltage source power dissipation=    4.1471m       watts
-
-
-
- ***** current sources
-
- subckt             
- element  0:ib      
-  volts    726.4399m
-  current   15.5000u
-  power    -11.2598u
-
-
-     total current source power dissipation= -11.2598u       watts
-
- **** resistors
-
- subckt             
- element  0:rc      
-  r value   30.0000 
-  v drop     0.     
-  current    0.     
-  power      0.     
-
-
-
- **** mosfets
-
-
- subckt                                                                    
- element  0:m1       0:m2       0:m3       0:m4       0:m5       0:m6      
- model    0:pch.5    0:pch.5    0:nch.8    0:nch.8    0:nch.4    0:pch.5   
- region     Saturati   Saturati   Saturati   Saturati   Saturati   Saturati
-  id      -370.5511u -370.5538u  370.5485u  370.5466u    2.6993m   -2.6993m
-  ibs      748.8862f  748.8862f    0.         0.         0.         0.     
-  ibd        1.3793p    1.3793p   -1.0208p   -1.0208p   -1.3236p    1.0773p
-  vgs     -525.5928m -525.5928m  510.3801m  510.3801m  510.3663m -473.5601m
-  vds     -315.2126m -315.2265m  510.3801m  510.3663m  661.6156m -538.3844m
-  vbs      374.4072m  374.4072m    0.         0.         0.         0.     
-  vth     -317.4853m -317.4852m  310.5394m  310.5396m  308.8762m -265.3554m
-  vdsat   -215.0900m -215.0900m  171.6134m  171.6133m  171.4649m -202.1914m
-  vod     -208.1075m -208.1076m  199.8407m  199.8405m  201.4900m -208.2047m
-  beta      18.0488m   18.0488m   19.9220m   19.9220m  139.7052m  127.3436m
-  gam eff  162.3000m  162.3000m  323.9481m  323.9481m  323.1000m  162.3000m
-  gm         2.9027m    2.9027m    2.6931m    2.6931m   19.2327m   21.5209m
-  gds      196.1475u  196.1329u  137.8099u  137.8134u  742.2184u  817.6032u
-  gmb      357.0860u  357.0893u  428.5655u  428.5639u    3.0896m    2.9830m
-  cdtot     16.9136f   16.9135f    4.3048f    4.3049f   27.6930f  114.5789f
-  cgtot     43.9383f   43.9383f   12.2576f   12.2576f   82.3319f  303.8982f
-  cstot     44.3858f   44.3858f   13.0669f   13.0669f   87.8510f  328.0681f
-  cbtot     21.6373f   21.6373f    7.2973f    7.2973f   48.0578f  173.4222f
-  cgs       38.2600f   38.2600f   10.3251f   10.3251f   69.5498f  269.6378f
-  cgd        7.2345f    7.2344f    1.5991f    1.5991f   10.5844f   45.2948f
-
-
-
- subckt                        
- element  0:m7       0:m8      
- model    0:pch.5    0:pch.20  
- region     Saturati   Saturati
-  id      -741.1105u  -15.4798u
-  ibs        0.         0.     
-  ibd      748.9576f  947.1240f
-  vgs     -473.5601m -473.5601m
-  vds     -374.4072m -473.5601m
-  vbs        0.         0.     
-  vth     -266.1401m -256.1708m
-  vdsat   -201.5570m -212.1262m
-  vod     -207.4200m -217.3893m
-  beta      36.9452m  686.7033u
-  gam eff  162.3000m  162.3000m
-  gm         5.9235m  121.8438u
-  gds      295.7952u    4.1866u
-  gmb      821.9828u   16.0746u
-  cdtot     35.9263f  876.8271a
-  cgtot     89.1422f    2.1643f
-  cstot     95.2260f    2.3610f
-  cbtot     51.9464f    1.3237f
-  cgs       78.2348f    1.9060f
-  cgd       14.1152f  333.6054a
-
-
-
- ******  
- ac simulation of an nmos input single-ended diff pair                          
-  ******  ac analysis                      tnom=  25.000 temp=  25.000          
- ******  
-   gain= -5.7171E+00
-   unity_gain= failed
-   phase_margin= failed
 
           ***** job concluded
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- ac simulation of an nmos input single-ended diff pair                          
+ transiaent simulation of a nmos input single-ende diff pair                    
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
-           total memory used        250 kbytes
+           total memory used        242 kbytes
 
-  # nodes =      13 # elements=      18
+  # nodes =      11 # elements=      16
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       8
   # va device =       0
 
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1           9
-    ac analysis        0.06         425         425
-    readin             0.20
+    transient          0.05         101         295         117 rev=        22
+    readin             0.19
     errchk             0.03
     setup              0.00
     output             0.00
-           total cpu time          0.33 seconds
+           total cpu time          0.28 seconds
            total elapsed time         1 seconds
-               job started at  04:47:20 06/24/2019
-               job ended   at  04:47:20 06/24/2019
+               job started at  05:06:51 06/24/2019
+               job ended   at  05:06:51 06/24/2019
 
 
  Init: hspice initialization file: D:\synopsys\Hspice_A-2008.03\hspice.ini

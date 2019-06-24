@@ -1,9 +1,10 @@
-AC Simulation of an NMOS input single-ended diff pair 
+Transiaent simulation of a NMOS input single-ende diff pair
 
 * Calling the technology file
 .lib './TSMC_90nm.l' TT
 
 * Amplifier nestlist
+
 
 M1	3	vin-	2	dd	pch	W=10.5u	L=0.2u	M=2
 M2	4	vin+	2	dd	pch	W=10.5u	L=0.2u	M=2
@@ -26,21 +27,13 @@ Cc	vout	5	1p
 Cl	vout	ss	1p
 Rc	4	5	30
 
-
 ***********************************************************
-** AC simulation
+** Transient simulation	
 
-vinac	vin+	im0	ac=1
-vindc1    im0       ss      dc=0.3
-vindc2    vin-      ss      dc=0.3
+vpulse1	    vin+	0	pulse(0 	0.4	0n	0n	0n	6n	6n)
+v0	vin-	0 dc=0	
 
-.ac   dec  50  10    3g
-.option  acout=0
-.probe   vdb(vout, ss)
-.probe   vp(vout, ss)
-
-.measure   ac  gain           find  vdb(vout, ss) at=15
-.measure   ac  unity_gain     when  vdb(vout, ss)=0
-.measure   ac  phase_margin   find  vp(ss, vout) when vdb(vout, ss)=0
+.option accurate=1
+.tran 0.02n 5.5n
 .probe
 .end
